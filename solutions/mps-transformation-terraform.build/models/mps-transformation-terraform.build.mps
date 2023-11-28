@@ -101,6 +101,10 @@
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
         <child id="5253498789149547825" name="sources" index="3bR31x" />
+        <child id="5253498789149547704" name="dependencies" index="3bR37C" />
+      </concept>
+      <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
+        <reference id="5253498789149547705" name="module" index="3bR37D" />
       </concept>
       <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
         <child id="763829979718664967" name="files" index="3rtmxm" />
@@ -120,6 +124,9 @@
         <property id="8369506495128725901" name="compact" index="BnDLt" />
         <property id="322010710375892619" name="uuid" index="3LESm3" />
         <child id="322010710375956261" name="path" index="3LF7KH" />
+      </concept>
+      <concept id="7259033139236285166" name="jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency" flags="nn" index="1SiIV0">
+        <child id="7259033139236285167" name="dependency" index="1SiIV1" />
       </concept>
     </language>
   </registry>
@@ -268,6 +275,21 @@
               </node>
             </node>
           </node>
+          <node concept="1SiIV0" id="7xk5uRlxJm6" role="3bR37C">
+            <node concept="3bR9La" id="7xk5uRlxJm7" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="7xk5uRlxJm8" role="3bR37C">
+            <node concept="3bR9La" id="7xk5uRlxJm9" role="1SiIV1">
+              <ref role="3bR37D" node="4vq0YnCFYYe" resolve="EDMM" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="7xk5uRlxJma" role="3bR37C">
+            <node concept="3bR9La" id="7xk5uRlxJmb" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+            </node>
+          </node>
         </node>
         <node concept="3rtmxn" id="7kIsSRMe3LH" role="3bR31x">
           <node concept="3LXTmp" id="7kIsSRMe3LI" role="3rtmxm">
@@ -282,6 +304,11 @@
             <node concept="3qWCbU" id="7kIsSRMe3LN" role="3LXTna">
               <property role="3qWCbO" value="icons/**" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7xk5uRlxJlS" role="3bR37C">
+          <node concept="3bR9La" id="7xk5uRlxJlT" role="1SiIV1">
+            <ref role="3bR37D" node="4vq0YnCFYYe" resolve="EDMM" />
           </node>
         </node>
       </node>
