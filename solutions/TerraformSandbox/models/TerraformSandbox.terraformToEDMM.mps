@@ -82,6 +82,10 @@
       <property role="3Q0SZ" value="newVM" />
       <property role="3Q0Jh" value="customLocal2" />
     </node>
+    <node concept="3Q0$U" id="6ULEqptewZu" role="3RZBQ">
+      <property role="3Q0SZ" value="newVM" />
+      <property role="3Q0Jh" value="customLocal1" />
+    </node>
   </node>
 </model>
 

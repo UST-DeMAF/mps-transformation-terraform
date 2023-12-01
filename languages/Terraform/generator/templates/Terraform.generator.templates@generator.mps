@@ -70,7 +70,6 @@
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
-      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -856,7 +855,6 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3cpWs6" id="2xuCNsSi4EE" role="3cqZAp" />
                   </node>
                   <node concept="2OqwBi" id="2xuCNsSfVw4" role="3clFbw">
                     <node concept="2OqwBi" id="2xuCNsSfUqr" role="2Oq$k0">
