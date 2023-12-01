@@ -13,15 +13,23 @@
     <import index="mdzn" ref="r:64f6ff6c-090a-4403-b4d4-4da62d0eef9a(Terraform.generator.util)" />
     <import index="9rr7" ref="r:775c6bb1-2ef0-4cbc-bf58-15eda5ee6023(EDMM.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
       <concept id="1161622665029" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_model" flags="nn" index="1Q6Npb" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
         <child id="8118189177080264854" name="alternative" index="nSUat" />
+      </concept>
+      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
+        <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -43,6 +51,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -61,6 +70,7 @@
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -79,6 +89,12 @@
       <concept id="3093926081414150598" name="jetbrains.mps.baseLanguage.structure.MultipleCatchClause" flags="ng" index="3uVAMA">
         <child id="8276990574895933173" name="catchBody" index="1zc67A" />
         <child id="8276990574895933172" name="throwable" index="1zc67B" />
+      </concept>
+      <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
+        <child id="1144226360166" name="iterable" index="1DdaDG" />
+      </concept>
+      <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
+        <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
       <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
@@ -102,6 +118,7 @@
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
         <child id="1195502100749" name="preMappingScript" index="1puA0r" />
+        <child id="1195502346405" name="postMappingScript" index="1pvy6N" />
       </concept>
       <concept id="1168559333462" name="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" flags="ln" index="j$656" />
       <concept id="1168619357332" name="jetbrains.mps.lang.generator.structure.RootTemplateAnnotation" flags="lg" index="n94m4">
@@ -186,9 +203,14 @@
       <concept id="1206482823744" name="jetbrains.mps.lang.smodel.structure.Model_AddRootOperation" flags="nn" index="3BYIHo">
         <child id="1206482823746" name="nodeArgument" index="3BYIHq" />
       </concept>
-      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
+        <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
@@ -244,6 +266,9 @@
   </registry>
   <node concept="bUwia" id="6oa0Sv6WMq8">
     <property role="TrG5h" value="main" />
+    <node concept="1puMqW" id="YMzV4$Y_5q" role="1pvy6N">
+      <ref role="1puQsG" node="YMzV4$Y_5A" resolve="resolveDuplicateComponentNames" />
+    </node>
     <node concept="aNPBN" id="7xk5uRlsDK0" role="aQYdv">
       <ref role="aOQi4" to="cj2j:2LhqwebOi8z" resolve="TerraformDeploymentModel" />
     </node>
@@ -776,6 +801,113 @@
                 <ref role="1Pybhc" to="mdzn:7xk5uRlx77n" resolve="VariableResolutionUtil" />
                 <node concept="1iwH7S" id="7xk5uRlx8nn" role="37wK5m" />
                 <node concept="30H73N" id="7xk5uRlx8st" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1pmfR0" id="YMzV4$Y_5A">
+    <property role="TrG5h" value="resolveDuplicateComponentNames" />
+    <node concept="1pplIY" id="YMzV4$Y_5B" role="1pqMTA">
+      <node concept="3clFbS" id="YMzV4$Y_5C" role="2VODD2">
+        <node concept="1DcWWT" id="2xuCNsSdCYf" role="3cqZAp">
+          <node concept="3clFbS" id="2xuCNsSdCYh" role="2LFqv$">
+            <node concept="1DcWWT" id="2xuCNsSfRRK" role="3cqZAp">
+              <node concept="3clFbS" id="2xuCNsSfRRM" role="2LFqv$">
+                <node concept="3clFbJ" id="2xuCNsSfU7s" role="3cqZAp">
+                  <node concept="3clFbS" id="2xuCNsSfU7u" role="3clFbx">
+                    <node concept="3clFbF" id="2xuCNsSfWFq" role="3cqZAp">
+                      <node concept="37vLTI" id="2xuCNsSfWFr" role="3clFbG">
+                        <node concept="2OqwBi" id="2xuCNsSfWFs" role="37vLTx">
+                          <node concept="2OqwBi" id="2xuCNsSfWFt" role="2Oq$k0">
+                            <node concept="37vLTw" id="2xuCNsSfWFu" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2xuCNsSdCYi" resolve="componentToTest" />
+                            </node>
+                            <node concept="3TrcHB" id="2xuCNsSfWFv" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="2xuCNsSfWFw" role="2OqNvi">
+                            <ref role="37wK5l" to="wyt6:~String.concat(java.lang.String)" resolve="concat" />
+                            <node concept="2OqwBi" id="2xuCNsSfWFx" role="37wK5m">
+                              <node concept="2OqwBi" id="2xuCNsSfWFy" role="2Oq$k0">
+                                <node concept="37vLTw" id="2xuCNsSfWFz" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="2xuCNsSdCYi" resolve="componentToTest" />
+                                </node>
+                                <node concept="3TrEf2" id="2xuCNsSfWF$" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="9rr7:2hvaCGv18J5" resolve="type" />
+                                </node>
+                              </node>
+                              <node concept="3TrcHB" id="2xuCNsSfWF_" role="2OqNvi">
+                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="2xuCNsSfWFA" role="37vLTJ">
+                          <node concept="37vLTw" id="2xuCNsSfWFB" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2xuCNsSdCYi" resolve="componentToTest" />
+                          </node>
+                          <node concept="3TrcHB" id="2xuCNsSfWFC" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3cpWs6" id="2xuCNsSi4EE" role="3cqZAp" />
+                  </node>
+                  <node concept="2OqwBi" id="2xuCNsSfVw4" role="3clFbw">
+                    <node concept="2OqwBi" id="2xuCNsSfUqr" role="2Oq$k0">
+                      <node concept="37vLTw" id="2xuCNsSfU7V" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2xuCNsSdCYi" resolve="componentToTest" />
+                      </node>
+                      <node concept="3TrcHB" id="2xuCNsSfUYM" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="2xuCNsSfWek" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+                      <node concept="2OqwBi" id="2xuCNsSfWxI" role="37wK5m">
+                        <node concept="37vLTw" id="2xuCNsSfWgl" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2xuCNsSfRRN" resolve="componentToCompare" />
+                        </node>
+                        <node concept="3TrcHB" id="2xuCNsSfWDC" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWsn" id="2xuCNsSfRRN" role="1Duv9x">
+                <property role="TrG5h" value="componentToCompare" />
+                <node concept="3Tqbb2" id="2xuCNsSfS3x" role="1tU5fm">
+                  <ref role="ehGHo" to="9rr7:2hvaCGv18J4" resolve="Component" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2xuCNsSfSBn" role="1DdaDG">
+                <node concept="1Q6Npb" id="2xuCNsSfSBo" role="2Oq$k0" />
+                <node concept="2SmgA7" id="2xuCNsSfSBp" role="2OqNvi">
+                  <node concept="chp4Y" id="2xuCNsSfSBq" role="1dBWTz">
+                    <ref role="cht4Q" to="9rr7:2hvaCGv18J4" resolve="Component" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWsn" id="2xuCNsSdCYi" role="1Duv9x">
+            <property role="TrG5h" value="componentToTest" />
+            <node concept="3Tqbb2" id="2xuCNsSdI5b" role="1tU5fm">
+              <ref role="ehGHo" to="9rr7:2hvaCGv18J4" resolve="Component" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2xuCNsSdF2U" role="1DdaDG">
+            <node concept="1Q6Npb" id="2xuCNsSdEGC" role="2Oq$k0" />
+            <node concept="2SmgA7" id="2xuCNsSdFvm" role="2OqNvi">
+              <node concept="chp4Y" id="2xuCNsSdGvM" role="1dBWTz">
+                <ref role="cht4Q" to="9rr7:2hvaCGv18J4" resolve="Component" />
               </node>
             </node>
           </node>

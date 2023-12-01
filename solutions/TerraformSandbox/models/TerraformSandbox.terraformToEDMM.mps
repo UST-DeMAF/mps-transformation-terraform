@@ -78,6 +78,10 @@
         <property role="3Q1ci" value="var.test" />
       </node>
     </node>
+    <node concept="3Q0$U" id="2xuCNsSeNDp" role="3RZBQ">
+      <property role="3Q0SZ" value="newVM" />
+      <property role="3Q0Jh" value="customLocal2" />
+    </node>
   </node>
 </model>
 
