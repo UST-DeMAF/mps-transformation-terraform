@@ -34,7 +34,7 @@
   </registry>
   <node concept="2Bw4ww" id="2LhqwebRs23">
     <node concept="3RZbq" id="7xk5uRlwiYD" role="3RZX9">
-      <property role="3RZkp" value="var.test" />
+      <property role="3RZkp" value="test" />
       <property role="3RZqf" value="variableValue" />
     </node>
     <node concept="3Q0$U" id="34jS6gMNpFx" role="3RZBQ">
