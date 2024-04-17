@@ -20,6 +20,4 @@ test_gen
 test_gen.caches
 *.iws
 build.properties
-.mps/workspace.xml
 .mps-caches
-.mps

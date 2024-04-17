@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/EDMM/EDMM.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/Terraform/Terraform.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/TerraformSandbox/TerraformSandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/mps-transformation-terraform.build/mps-transformation-terraform.build.msd" folder="" />
+    </projectModules>
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/mps-transformation-terraform.iml" filepath="$PROJECT_DIR$/.idea/mps-transformation-terraform.iml" />
+    </modules>
+  </component>
+</project>
