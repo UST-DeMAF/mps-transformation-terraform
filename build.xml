@@ -298,7 +298,9 @@
     <mkdir dir="${build.tmp}/default/TerraformSandbox.jar/META-INF" />
     <echoxml file="${build.tmp}/default/TerraformSandbox.jar/META-INF/module.xml">
       <module namespace="TerraformSandbox" type="solution" uuid="b50dac32-c2cf-4f60-8fb4-5c91fba30a2b">
-        <dependencies />
+        <dependencies>
+          <module ref="f14a2376-c0aa-410c-b33a-ef6b7f4e7a0c(EDMM)" kind="cl" />
+        </dependencies>
         <uses>
           <language id="l:667f265d-40c8-4c6d-8057-5c5cb65be64f:Terraform" />
         </uses>
@@ -647,7 +649,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.TerraformSandbox">
+  <target name="java.compile.TerraformSandbox" depends="java.compile.EDMM, fetchDependencies">
     <mkdir dir="${project_home}/solutions/TerraformSandbox/source_gen" />
     <mkdir dir="${build.tmp}/java/out/TerraformSandbox" />
     <javac destdir="${build.tmp}/java/out/TerraformSandbox" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -655,7 +657,46 @@
       <src>
         <path location="${project_home}/solutions/TerraformSandbox/source_gen" />
       </src>
-      <classpath />
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
+        <pathelement path="${build.tmp}/java/out/EDMM" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/app.jar" />
+        <fileset file="${artifacts.mps}/lib/3rd-party-rt.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
+        <fileset file="${artifacts.mps}/lib/jps-model.jar" />
+        <fileset file="${artifacts.mps}/lib/testFramework.jar" />
+        <fileset file="${artifacts.mps}/lib/stats.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+      </classpath>
     </javac>
   </target>
   
