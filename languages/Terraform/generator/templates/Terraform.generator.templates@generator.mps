@@ -117,7 +117,6 @@
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
         <child id="1195502100749" name="preMappingScript" index="1puA0r" />
-        <child id="1195502346405" name="postMappingScript" index="1pvy6N" />
       </concept>
       <concept id="1168559333462" name="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" flags="ln" index="j$656" />
       <concept id="1168619357332" name="jetbrains.mps.lang.generator.structure.RootTemplateAnnotation" flags="lg" index="n94m4">
@@ -265,9 +264,6 @@
   </registry>
   <node concept="bUwia" id="6oa0Sv6WMq8">
     <property role="TrG5h" value="main" />
-    <node concept="1puMqW" id="YMzV4$Y_5q" role="1pvy6N">
-      <ref role="1puQsG" node="YMzV4$Y_5A" resolve="resolveDuplicateComponentNames" />
-    </node>
     <node concept="aNPBN" id="7xk5uRlsDK0" role="aQYdv">
       <ref role="aOQi4" to="cj2j:2LhqwebOi8z" resolve="TerraformDeploymentModel" />
     </node>
@@ -595,10 +591,23 @@
         <node concept="3zFVjK" id="7xk5uRlsv4h" role="3zH0cK">
           <node concept="3clFbS" id="7xk5uRlsv4i" role="2VODD2">
             <node concept="3clFbF" id="7xk5uRlsvdQ" role="3cqZAp">
-              <node concept="2OqwBi" id="7xk5uRlsvtB" role="3clFbG">
-                <node concept="30H73N" id="7xk5uRlsvdP" role="2Oq$k0" />
-                <node concept="3TrcHB" id="7xk5uRlsvLa" role="2OqNvi">
-                  <ref role="3TsBF5" to="cj2j:34jS6gMMYIP" resolve="type" />
+              <node concept="3cpWs3" id="5mC7Y04IWM1" role="3clFbG">
+                <node concept="2OqwBi" id="5mC7Y04IWq2" role="3uHU7w">
+                  <node concept="30H73N" id="5mC7Y04IW6k" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="5mC7Y04IWCh" role="2OqNvi">
+                    <ref role="3TsBF5" to="cj2j:34jS6gMMYTr" resolve="name" />
+                  </node>
+                </node>
+                <node concept="3cpWs3" id="5mC7Y04IVYQ" role="3uHU7B">
+                  <node concept="2OqwBi" id="7xk5uRlsvtB" role="3uHU7B">
+                    <node concept="30H73N" id="7xk5uRlsvdP" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="7xk5uRlsvLa" role="2OqNvi">
+                      <ref role="3TsBF5" to="cj2j:34jS6gMMYIP" resolve="type" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="5mC7Y04IWPp" role="3uHU7w">
+                    <property role="Xl_RC" value="_" />
+                  </node>
                 </node>
               </node>
             </node>
