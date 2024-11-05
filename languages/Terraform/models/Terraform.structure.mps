@@ -57,6 +57,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="34jS6gMN1aY" resolve="Variable" />
     </node>
+    <node concept="1TJgyj" id="6zaxIwv2f2g" role="1TKVEi">
+      <property role="IQ2ns" value="7550996056751272080" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="providers" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6zaxIwv2eRF" resolve="Provider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="34jS6gMMY_u">
     <property role="EcuMT" value="3536416853369547102" />
@@ -138,6 +145,16 @@
     <node concept="1TJgyi" id="34jS6gMN1rF" role="1TKVEl">
       <property role="IQ2nx" value="3536416853369558763" />
       <property role="TrG5h" value="expression" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6zaxIwv2eRF">
+    <property role="EcuMT" value="7550996056751271403" />
+    <property role="TrG5h" value="Provider" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="6zaxIwv2gtb" role="1TKVEl">
+      <property role="IQ2nx" value="7550996056751277899" />
+      <property role="TrG5h" value="name" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>

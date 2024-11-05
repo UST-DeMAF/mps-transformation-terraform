@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:59c4404a-4efd-44ae-a23c-bf3f31e328cb(TerraformSandbox.outputEDMM_model)">
+  <persistence version="9" />
+  <languages>
+    <use id="f14a2376-c0aa-410c-b33a-ef6b7f4e7a0c" name="EDMM" version="0" />
+  </languages>
+  <imports />
+  <registry>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="f14a2376-c0aa-410c-b33a-ef6b7f4e7a0c" name="EDMM">
+      <concept id="2620860285162130305" name="EDMM.structure.Property" flags="ng" index="VmU4a">
+        <property id="2620860285162130306" name="key" index="VmU49" />
+        <property id="2620860285162130308" name="value" index="VmU4f" />
+      </concept>
+      <concept id="2620860285162130361" name="EDMM.structure.ComponentType" flags="ng" index="VmU4M" />
+      <concept id="2620860285162130367" name="EDMM.structure.Relation" flags="ng" index="VmU4O">
+        <reference id="2620860285162130378" name="target" index="VmU51" />
+        <reference id="2620860285162130370" name="type" index="VmU59" />
+        <reference id="2620860285162130375" name="source" index="VmU5c" />
+      </concept>
+      <concept id="2620860285162130364" name="EDMM.structure.RelationType" flags="ng" index="VmU4R">
+        <reference id="2877443765335994024" name="parentType" index="3hVhlN" />
+      </concept>
+      <concept id="2620860285162130372" name="EDMM.structure.Component" flags="ng" index="VmU5f">
+        <reference id="2620860285162130373" name="type" index="VmU5e" />
+      </concept>
+      <concept id="2620860285162130297" name="EDMM.structure.DeploymentModel" flags="ng" index="VmU7M">
+        <child id="2620860285162130303" name="modelEntities" index="VmU7O" />
+      </concept>
+      <concept id="2620860285162130300" name="EDMM.structure.ModelEntity" flags="ng" index="VmU7R">
+        <child id="2620860285162130336" name="properties" index="VmU4F" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="VmU7M" id="gP6P4MQqI5">
+    <node concept="VmU4M" id="5wF4P8PFUHo" role="VmU7O">
+      <property role="TrG5h" value="azurerm_testResourceType_testResource" />
+      <node concept="VmU4a" id="5wF4P8PFUHp" role="VmU4F">
+        <property role="VmU49" value="arg" />
+      </node>
+      <node concept="VmU4a" id="5wF4P8PFUHq" role="VmU4F">
+        <property role="VmU49" value="size" />
+      </node>
+      <node concept="VmU4a" id="5wF4P8PFUHr" role="VmU4F">
+        <property role="VmU49" value="ian.king" />
+      </node>
+      <node concept="VmU4a" id="5wF4P8PFUHs" role="VmU4F">
+        <property role="VmU49" value="blockType.blockArgument" />
+      </node>
+      <node concept="VmU4a" id="5wF4P8PFUHt" role="VmU4F">
+        <property role="VmU49" value="blockType.blockArgument2" />
+      </node>
+      <node concept="VmU4a" id="5wF4P8PFUHu" role="VmU4F">
+        <property role="VmU49" value="blockType.nestedBlockType.nestedBlockArgument" />
+      </node>
+      <node concept="VmU4a" id="5wF4P8PFUHv" role="VmU4F">
+        <property role="VmU49" value="blockType.nestedBlockType.nestedBlockArgument2" />
+      </node>
+      <node concept="VmU4a" id="5wF4P8PFUHw" role="VmU4F">
+        <property role="VmU49" value="blockType.nestedBlockType2.nestedBlock2ArgumentValue" />
+      </node>
+    </node>
+    <node concept="VmU7R" id="5wF4P8PFUBF" role="VmU7O" />
+    <node concept="VmU7R" id="5wF4P8PFUBg" role="VmU7O" />
+    <node concept="VmU4R" id="5wF4P8PFTvd" role="VmU7O">
+      <property role="TrG5h" value="DependsOn" />
+    </node>
+    <node concept="VmU7R" id="5wF4P8PFT4l" role="VmU7O" />
+    <node concept="VmU7R" id="5wF4P8PFT4k" role="VmU7O" />
+    <node concept="VmU7R" id="5wF4P8PFT3T" role="VmU7O" />
+    <node concept="VmU7R" id="5wF4P8PFT3S" role="VmU7O" />
+    <node concept="VmU7R" id="5wF4P8PFSTH" role="VmU7O" />
+    <node concept="VmU7R" id="5wF4P8PFSQQ" role="VmU7O" />
+    <node concept="VmU7R" id="5wF4P8PFSPB" role="VmU7O" />
+    <node concept="VmU7R" id="5wF4P8PFSN$" role="VmU7O" />
+    <node concept="VmU7R" id="5wF4P8PFSMJ" role="VmU7O" />
+    <node concept="VmU7R" id="5wF4P8PFSLw" role="VmU7O" />
+    <node concept="VmU5f" id="5wF4P8PFSBI" role="VmU7O">
+      <property role="TrG5h" value="AWS" />
+      <ref role="VmU5e" node="5wF4P8PFVXD" resolve="Cloud Provider" />
+    </node>
+    <node concept="VmU5f" id="5wF4P8PFSBi" role="VmU7O">
+      <property role="TrG5h" value="GCP" />
+      <ref role="VmU5e" node="5wF4P8PFVXD" resolve="Cloud Provider" />
+    </node>
+    <node concept="VmU5f" id="5wF4P8PFSAs" role="VmU7O">
+      <property role="TrG5h" value="Microsoft Azure" />
+      <ref role="VmU5e" node="5wF4P8PFVXD" resolve="Cloud Provider" />
+    </node>
+    <node concept="VmU5f" id="5wF4P8PFS$o" role="VmU7O">
+      <property role="TrG5h" value="testResource" />
+      <ref role="VmU5e" node="5wF4P8PFUHo" resolve="azurerm_testResourceType_testResource" />
+      <node concept="VmU4a" id="5wF4P8PFS$p" role="VmU4F">
+        <property role="VmU49" value="arg" />
+        <property role="VmU4f" value="value" />
+      </node>
+      <node concept="VmU4a" id="5wF4P8PFWvo" role="VmU4F">
+        <property role="VmU49" value="size" />
+        <property role="VmU4f" value="StorageSize" />
+      </node>
+      <node concept="VmU4a" id="5wF4P8PFW$h" role="VmU4F">
+        <property role="VmU49" value="ian.king" />
+        <property role="VmU4f" value="variableValue" />
+      </node>
+      <node concept="VmU4a" id="5wF4P8PFWDa" role="VmU4F">
+        <property role="VmU49" value="blockType.blockArgument" />
+        <property role="VmU4f" value="variableValue" />
+      </node>
+      <node concept="VmU4a" id="5wF4P8PFWG1" role="VmU4F">
+        <property role="VmU49" value="blockType.blockArgument2" />
+        <property role="VmU4f" value="blockArgumentValue2" />
+      </node>
+      <node concept="VmU4a" id="5wF4P8PFWIu" role="VmU4F">
+        <property role="VmU49" value="blockType.nestedBlockType.nestedBlockArgument" />
+        <property role="VmU4f" value="variableValue" />
+      </node>
+      <node concept="VmU4a" id="5wF4P8PFWMz" role="VmU4F">
+        <property role="VmU49" value="blockType.nestedBlockType.nestedBlockArgument2" />
+        <property role="VmU4f" value="nestedBlockArgumentValue2" />
+      </node>
+      <node concept="VmU4a" id="5wF4P8PFWPO" role="VmU4F">
+        <property role="VmU49" value="blockType.nestedBlockType2.nestedBlock2ArgumentValue" />
+        <property role="VmU4f" value="nestedBlock2ArgumentValue" />
+      </node>
+    </node>
+    <node concept="VmU7R" id="5wF4P8PFSqb" role="VmU7O" />
+    <node concept="VmU7R" id="5wF4P8PFSpm" role="VmU7O" />
+    <node concept="VmU7R" id="gP6P4MQqIb" role="VmU7O" />
+    <node concept="VmU7R" id="gP6P4MQqIa" role="VmU7O" />
+    <node concept="VmU7R" id="gP6P4MQqI9" role="VmU7O" />
+    <node concept="VmU7R" id="gP6P4MQqI8" role="VmU7O" />
+    <node concept="VmU7R" id="5wF4P8PFSrq" role="VmU7O" />
+    <node concept="VmU7R" id="5wF4P8PFSvT" role="VmU7O" />
+    <node concept="VmU5f" id="5wF4P8PFXmp" role="VmU7O">
+      <property role="TrG5h" value="testResource2AZURERM" />
+      <ref role="VmU5e" node="5wF4P8PFVix" resolve="azurerm_testResourceType_vm_testResource2AZURERM" />
+    </node>
+    <node concept="VmU5f" id="5wF4P8PFXl9" role="VmU7O">
+      <property role="TrG5h" value="testResourceGoogle" />
+      <ref role="VmU5e" node="5wF4P8PFVhi" resolve="google_vm_big_testResourceGoogle" />
+    </node>
+    <node concept="VmU5f" id="5wF4P8PFXjv" role="VmU7O">
+      <property role="TrG5h" value="testResoruceAws" />
+      <ref role="VmU5e" node="5wF4P8PFVFK" resolve="aws_vm_testResoruceAws" />
+    </node>
+    <node concept="VmU5f" id="5wF4P8PFXVp" role="VmU7O">
+      <property role="TrG5h" value="resorceDocker" />
+      <ref role="VmU5e" node="5wF4P8PFVEx" resolve="docker_container_resorceDocker" />
+      <node concept="VmU4a" id="5wF4P8PFXVq" role="VmU4F">
+        <property role="VmU49" value="docker_image" />
+        <property role="VmU4f" value="ghcr.io/myNiceImage" />
+      </node>
+    </node>
+    <node concept="VmU5f" id="gP6P4MQqIc" role="VmU7O">
+      <property role="TrG5h" value="testResourceWoProvider" />
+      <ref role="VmU5e" node="gP6P4MQqIe" resolve="xyz_arbitrary_type_testResourceWoProvider" />
+    </node>
+    <node concept="VmU4M" id="5wF4P8PFVix" role="VmU7O">
+      <property role="TrG5h" value="azurerm_testResourceType_vm_testResource2AZURERM" />
+    </node>
+    <node concept="VmU4M" id="5wF4P8PFVhi" role="VmU7O">
+      <property role="TrG5h" value="google_vm_big_testResourceGoogle" />
+    </node>
+    <node concept="VmU4M" id="5wF4P8PFVdB" role="VmU7O">
+      <property role="TrG5h" value="aws_vm_testResoruceAws" />
+    </node>
+    <node concept="VmU4M" id="5wF4P8PFVEx" role="VmU7O">
+      <property role="TrG5h" value="docker_container_resorceDocker" />
+      <node concept="VmU4a" id="5wF4P8PFV_e" role="VmU4F">
+        <property role="VmU49" value="docker_image" />
+      </node>
+    </node>
+    <node concept="VmU4M" id="gP6P4MQqIe" role="VmU7O">
+      <property role="TrG5h" value="xyz_arbitrary_type_testResourceWoProvider" />
+    </node>
+    <node concept="VmU4M" id="5wF4P8PFVXD" role="VmU7O">
+      <property role="TrG5h" value="Cloud Provider" />
+    </node>
+    <node concept="VmU4R" id="5wF4P8PFT6M" role="VmU7O">
+      <property role="TrG5h" value="HostedOn" />
+      <ref role="3hVhlN" node="5wF4P8PFTvd" resolve="DependsOn" />
+    </node>
+    <node concept="VmU7R" id="5wF4P8PFTdk" role="VmU7O" />
+    <node concept="VmU4O" id="5wF4P8PFZOR" role="VmU7O">
+      <property role="TrG5h" value="testResourceHostedOnMicrosoftAzure" />
+      <ref role="VmU59" node="5wF4P8PFT6M" resolve="HostedOn" />
+      <ref role="VmU5c" node="5wF4P8PFS$o" resolve="testResource" />
+      <ref role="VmU51" node="5wF4P8PFSAs" resolve="Microsoft Azure" />
+    </node>
+    <node concept="VmU4O" id="5wF4P8PFZNP" role="VmU7O">
+      <property role="TrG5h" value="testResource2AZURERMHostedOnMicrosoftAzure" />
+      <ref role="VmU59" node="5wF4P8PFT6M" resolve="HostedOn" />
+      <ref role="VmU5c" node="5wF4P8PFXmp" resolve="testResource2AZURERM" />
+      <ref role="VmU51" node="5wF4P8PFSAs" resolve="Microsoft Azure" />
+    </node>
+    <node concept="VmU4O" id="5wF4P8PFZNq" role="VmU7O">
+      <property role="TrG5h" value="testResourceGoogleHostedOnGCP" />
+      <ref role="VmU59" node="5wF4P8PFT6M" resolve="HostedOn" />
+      <ref role="VmU5c" node="5wF4P8PFXl9" resolve="testResourceGoogle" />
+      <ref role="VmU51" node="5wF4P8PFSBi" resolve="GCP" />
+    </node>
+    <node concept="VmU4O" id="5wF4P8PFZLL" role="VmU7O">
+      <property role="TrG5h" value="testResoruceAwsHostedOnAWS" />
+      <ref role="VmU59" node="5wF4P8PFT6M" resolve="HostedOn" />
+      <ref role="VmU5c" node="5wF4P8PFXjv" resolve="testResoruceAws" />
+      <ref role="VmU51" node="5wF4P8PFSBI" resolve="AWS" />
+    </node>
+  </node>
+</model>
+
