@@ -1,7 +1,7 @@
 <TerraformDeploymentModel>
     <resources>
         <resources>
-            <resourceType>newResourceType</resourceType>
+            <resourceType>google_newResourceType</resourceType>
             <resourceName>newResource</resourceName>
             <arguments>
                 <arguments>
@@ -26,7 +26,7 @@
             </blocks>
         </resources>
         <resources>
-            <resourceType>newResource2Type</resourceType>
+            <resourceType>dummyProvider_newResource2Type</resourceType>
             <resourceName>newResource2</resourceName>
             <arguments>
                 <arguments>
@@ -40,7 +40,15 @@
     <variables>
         <variables>
             <identifier>var.key</identifier>
-            <expression>variableValue</expression>
+            <expression>"variableValue"</expression>
         </variables>
     </variables>
+    <providers>
+        <providers>
+            <name>hashicorp/google</name>
+        </providers>
+        <providers>
+            <name>hashicorp/kubernetes</name>
+        </providers>
+    </providers>
 </TerraformDeploymentModel>

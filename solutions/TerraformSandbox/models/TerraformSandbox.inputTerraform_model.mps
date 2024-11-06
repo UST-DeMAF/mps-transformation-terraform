@@ -37,10 +37,6 @@
     </language>
   </registry>
   <node concept="2Bw4ww" id="gP6P4MQqI4">
-    <node concept="3RZbq" id="7xk5uRlwiYD" role="3RZX9">
-      <property role="3RZkp" value="test" />
-      <property role="3RZqf" value="variableValue" />
-    </node>
     <node concept="1RKAG3" id="6zaxIwv6gO6" role="1RKBpS">
       <property role="1RKS6z" value="hashicorp/aws" />
     </node>
@@ -50,11 +46,15 @@
     <node concept="1RKAG3" id="5wF4P8PDZA_" role="1RKBpS">
       <property role="1RKS6z" value="hashicorp/azurerm" />
     </node>
+    <node concept="1RKAG3" id="6zaxIwv6gO8" role="1RKBpS">
+      <property role="1RKS6z" value="kreuzwerker/docker" />
+    </node>
     <node concept="1RKAG3" id="6zaxIwv6gO7" role="1RKBpS">
       <property role="1RKS6z" value="hashicorp/kubernetes" />
     </node>
-    <node concept="1RKAG3" id="6zaxIwv6gO8" role="1RKBpS">
-      <property role="1RKS6z" value="kreuzwerker/docker" />
+    <node concept="3RZbq" id="7xk5uRlwiYD" role="3RZX9">
+      <property role="3RZkp" value="test" />
+      <property role="3RZqf" value="variableValue" />
     </node>
     <node concept="3Q0$U" id="gP6P4MQqI6" role="3RZBQ">
       <property role="3Q0SZ" value="testResource" />
@@ -102,8 +102,12 @@
       </node>
     </node>
     <node concept="3Q0$U" id="5wF4P8PCq_e" role="3RZBQ">
-      <property role="3Q0SZ" value="testResource2AZURERM" />
-      <property role="3Q0Jh" value="azurerm_testResourceType_vm" />
+      <property role="3Q0SZ" value="testResource2" />
+      <property role="3Q0Jh" value="azurerm_vm" />
+    </node>
+    <node concept="3Q0$U" id="4RUYTz2c8E2" role="3RZBQ">
+      <property role="3Q0SZ" value="testResource2" />
+      <property role="3Q0Jh" value="azurerm_network" />
     </node>
     <node concept="3Q0$U" id="5wF4P8PCqRF" role="3RZBQ">
       <property role="3Q0SZ" value="testResourceGoogle" />

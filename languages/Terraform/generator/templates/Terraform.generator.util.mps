@@ -1563,6 +1563,79 @@
         <node concept="17QB3L" id="5wF4P8P3Fv8" role="1tU5fm" />
       </node>
     </node>
+    <node concept="2tJIrI" id="4RUYTz28qf3" role="jymVt" />
+    <node concept="2YIFZL" id="4RUYTz28Aaz" role="jymVt">
+      <property role="TrG5h" value="getFilteredListOfSupportedProviders" />
+      <node concept="3clFbS" id="4RUYTz28Aa_" role="3clF47">
+        <node concept="3cpWs8" id="4RUYTz28AaA" role="3cqZAp">
+          <node concept="3cpWsn" id="4RUYTz28AaB" role="3cpWs9">
+            <property role="TrG5h" value="filteredProviders" />
+            <node concept="2I9FWS" id="4RUYTz28AaC" role="1tU5fm">
+              <ref role="2I9WkF" to="cj2j:6zaxIwv2eRF" resolve="Provider" />
+            </node>
+            <node concept="2ShNRf" id="4RUYTz28AaD" role="33vP2m">
+              <node concept="2T8Vx0" id="4RUYTz28AaE" role="2ShVmc">
+                <node concept="2I9FWS" id="4RUYTz28AaF" role="2T96Bj">
+                  <ref role="2I9WkF" to="cj2j:6zaxIwv2eRF" resolve="Provider" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="4RUYTz28AaG" role="3cqZAp">
+          <node concept="2GrKxI" id="4RUYTz28AaH" role="2Gsz3X">
+            <property role="TrG5h" value="provider" />
+          </node>
+          <node concept="37vLTw" id="4RUYTz28AaI" role="2GsD0m">
+            <ref role="3cqZAo" node="4RUYTz28AaZ" resolve="providers" />
+          </node>
+          <node concept="3clFbS" id="4RUYTz28AaJ" role="2LFqv$">
+            <node concept="3clFbJ" id="4RUYTz28AaK" role="3cqZAp">
+              <node concept="1rXfSq" id="4RUYTz28AaL" role="3clFbw">
+                <ref role="37wK5l" node="6zaxIwv4OG0" resolve="isProviderSupported" />
+                <node concept="2OqwBi" id="4RUYTz28AaM" role="37wK5m">
+                  <node concept="2GrUjf" id="4RUYTz28AaN" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="4RUYTz28AaH" resolve="provider" />
+                  </node>
+                  <node concept="3TrcHB" id="4RUYTz28AaO" role="2OqNvi">
+                    <ref role="3TsBF5" to="cj2j:6zaxIwv2gtb" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="4RUYTz28AaP" role="3clFbx">
+                <node concept="3clFbF" id="4RUYTz28AaQ" role="3cqZAp">
+                  <node concept="2OqwBi" id="4RUYTz28AaR" role="3clFbG">
+                    <node concept="37vLTw" id="4RUYTz28AaS" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4RUYTz28AaB" resolve="filteredProviders" />
+                    </node>
+                    <node concept="TSZUe" id="4RUYTz28AaT" role="2OqNvi">
+                      <node concept="2GrUjf" id="4RUYTz28AaU" role="25WWJ7">
+                        <ref role="2Gs0qQ" node="4RUYTz28AaH" resolve="provider" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="4RUYTz28AaV" role="3cqZAp">
+          <node concept="37vLTw" id="4RUYTz28AaW" role="3cqZAk">
+            <ref role="3cqZAo" node="4RUYTz28AaB" resolve="filteredProviders" />
+          </node>
+        </node>
+      </node>
+      <node concept="2I9FWS" id="4RUYTz28AaY" role="3clF45">
+        <ref role="2I9WkF" to="cj2j:6zaxIwv2eRF" resolve="Provider" />
+      </node>
+      <node concept="37vLTG" id="4RUYTz28AaZ" role="3clF46">
+        <property role="TrG5h" value="providers" />
+        <node concept="2I9FWS" id="4RUYTz28Ab0" role="1tU5fm">
+          <ref role="2I9WkF" to="cj2j:6zaxIwv2eRF" resolve="Provider" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4RUYTz28AaX" role="1B3o_S" />
+    </node>
     <node concept="2tJIrI" id="6zaxIwv4OE0" role="jymVt" />
     <node concept="2YIFZL" id="6zaxIwv4GKX" role="jymVt">
       <property role="TrG5h" value="getSupportedCloudProviderTypes" />

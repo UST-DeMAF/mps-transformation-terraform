@@ -135,9 +135,13 @@
     <node concept="VmU7R" id="gP6P4MQqI8" role="VmU7O" />
     <node concept="VmU7R" id="5wF4P8PFSrq" role="VmU7O" />
     <node concept="VmU7R" id="5wF4P8PFSvT" role="VmU7O" />
-    <node concept="VmU5f" id="5wF4P8PFXmp" role="VmU7O">
-      <property role="TrG5h" value="testResource2AZURERM" />
+    <node concept="VmU5f" id="4RUYTz2fwEA" role="VmU7O">
+      <property role="TrG5h" value="testResource2_azurerm_vm_testResource2" />
       <ref role="VmU5e" node="5wF4P8PFVix" resolve="azurerm_testResourceType_vm_testResource2AZURERM" />
+    </node>
+    <node concept="VmU5f" id="5wF4P8PFXmp" role="VmU7O">
+      <property role="TrG5h" value="testResource2" />
+      <ref role="VmU5e" node="4RUYTz2fwCE" resolve="azurerm_network_testResource2" />
     </node>
     <node concept="VmU5f" id="5wF4P8PFXl9" role="VmU7O">
       <property role="TrG5h" value="testResourceGoogle" />
@@ -145,7 +149,7 @@
     </node>
     <node concept="VmU5f" id="5wF4P8PFXjv" role="VmU7O">
       <property role="TrG5h" value="testResoruceAws" />
-      <ref role="VmU5e" node="5wF4P8PFVFK" resolve="aws_vm_testResoruceAws" />
+      <ref role="VmU5e" node="5wF4P8PFVdB" resolve="aws_vm_testResoruceAws" />
     </node>
     <node concept="VmU5f" id="5wF4P8PFXVp" role="VmU7O">
       <property role="TrG5h" value="resorceDocker" />
@@ -160,7 +164,10 @@
       <ref role="VmU5e" node="gP6P4MQqIe" resolve="xyz_arbitrary_type_testResourceWoProvider" />
     </node>
     <node concept="VmU4M" id="5wF4P8PFVix" role="VmU7O">
-      <property role="TrG5h" value="azurerm_testResourceType_vm_testResource2AZURERM" />
+      <property role="TrG5h" value="azurerm_vm_testResource2" />
+    </node>
+    <node concept="VmU4M" id="4RUYTz2fwCE" role="VmU7O">
+      <property role="TrG5h" value="azurerm_network_testResource2" />
     </node>
     <node concept="VmU4M" id="5wF4P8PFVhi" role="VmU7O">
       <property role="TrG5h" value="google_vm_big_testResourceGoogle" />
@@ -191,10 +198,16 @@
       <ref role="VmU5c" node="5wF4P8PFS$o" resolve="testResource" />
       <ref role="VmU51" node="5wF4P8PFSAs" resolve="Microsoft Azure" />
     </node>
-    <node concept="VmU4O" id="5wF4P8PFZNP" role="VmU7O">
-      <property role="TrG5h" value="testResource2AZURERMHostedOnMicrosoftAzure" />
+    <node concept="VmU4O" id="245Pf5ALS_n" role="VmU7O">
+      <property role="TrG5h" value="testResource2_azurerm_vm_testResource2HostedOnMicrosoftAzure" />
       <ref role="VmU59" node="5wF4P8PFT6M" resolve="HostedOn" />
-      <ref role="VmU5c" node="5wF4P8PFXmp" resolve="testResource2AZURERM" />
+      <ref role="VmU5c" node="4RUYTz2fwEA" resolve="testResource2_azurerm_vm_testResource2" />
+      <ref role="VmU51" node="5wF4P8PFSAs" resolve="Microsoft Azure" />
+    </node>
+    <node concept="VmU4O" id="5wF4P8PFZNP" role="VmU7O">
+      <property role="TrG5h" value="testResource2HostedOnMicrosoftAzure" />
+      <ref role="VmU59" node="5wF4P8PFT6M" resolve="HostedOn" />
+      <ref role="VmU5c" node="5wF4P8PFXmp" resolve="testResource2" />
       <ref role="VmU51" node="5wF4P8PFSAs" resolve="Microsoft Azure" />
     </node>
     <node concept="VmU4O" id="5wF4P8PFZNq" role="VmU7O">
