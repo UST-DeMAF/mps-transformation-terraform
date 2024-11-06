@@ -458,7 +458,7 @@
                 <node concept="17QB3L" id="5ZTtTxlUH49" role="1tU5fm" />
                 <node concept="3cpWs3" id="5ZTtTxlUK7H" role="33vP2m">
                   <node concept="Xl_RD" id="5ZTtTxlUKbE" role="3uHU7w">
-                    <property role="Xl_RC" value="dummyTerraformDM.xml" />
+                    <property role="Xl_RC" value="input.xml" />
                   </node>
                   <node concept="Xl_RD" id="5ZTtTxlUHd9" role="3uHU7B">
                     <property role="Xl_RC" value="transformationInput/" />
