@@ -104,6 +104,41 @@
     <node concept="3Q0$U" id="5wF4P8PCq_e" role="3RZBQ">
       <property role="3Q0SZ" value="testResource2" />
       <property role="3Q0Jh" value="azurerm_vm" />
+      <node concept="3Q103" id="2DNANZmTb3F" role="3Q1MN">
+        <property role="3Q16K" value="sharedArgument" />
+        <property role="3Q1ci" value="sharedArgumentValue" />
+      </node>
+    </node>
+    <node concept="3Q0$U" id="2DNANZmTaUB" role="3RZBQ">
+      <property role="3Q0SZ" value="testResource3" />
+      <property role="3Q0Jh" value="azurerm_vm" />
+      <node concept="3Q1nZ" id="2DNANZnFyLb" role="3Q1Wp">
+        <property role="3Q1ry" value="thirdType" />
+        <node concept="3Q103" id="2DNANZnFyMP" role="3Q1uZ">
+          <property role="3Q16K" value="thirdTypeArgument" />
+          <property role="3Q1ci" value="thirdTypeArgumentValue" />
+        </node>
+      </node>
+      <node concept="3Q103" id="2DNANZmTaZX" role="3Q1MN">
+        <property role="3Q16K" value="resource3Argument" />
+        <property role="3Q1ci" value="resource3ArgumentValue" />
+      </node>
+      <node concept="3Q103" id="2DNANZmTb5l" role="3Q1MN">
+        <property role="3Q16K" value="sharedArgument" />
+        <property role="3Q1ci" value="sharedArgumentValue3" />
+      </node>
+    </node>
+    <node concept="3Q0$U" id="2DNANZmTaYc" role="3RZBQ">
+      <property role="3Q0SZ" value="testResource4" />
+      <property role="3Q0Jh" value="azurerm_vm" />
+      <node concept="3Q103" id="2DNANZmTb1O" role="3Q1MN">
+        <property role="3Q16K" value="resource4Argument" />
+        <property role="3Q1ci" value="resource4ArgumentValue" />
+      </node>
+      <node concept="3Q103" id="2DNANZmTb6c" role="3Q1MN">
+        <property role="3Q16K" value="sharedArgument" />
+        <property role="3Q1ci" value="sharedArgumentValue4" />
+      </node>
     </node>
     <node concept="3Q0$U" id="4RUYTz2c8E2" role="3RZBQ">
       <property role="3Q0SZ" value="testResource2" />
