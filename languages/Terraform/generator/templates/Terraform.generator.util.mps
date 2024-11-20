@@ -1704,7 +1704,7 @@
                     <property role="Xl_RC" value="hashicorp/azurerm" />
                   </node>
                   <node concept="Xl_RD" id="6zaxIwv4Ow$" role="3MiMdn">
-                    <property role="Xl_RC" value="Microsoft Azure" />
+                    <property role="Xl_RC" value="MicrosoftAzure" />
                   </node>
                 </node>
                 <node concept="3Milgn" id="6zaxIwv4Ow_" role="3MiYds">

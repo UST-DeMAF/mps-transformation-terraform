@@ -1241,7 +1241,7 @@
       </node>
     </node>
     <node concept="VmU4M" id="4RUYTz1VDtN" role="VmU7O">
-      <property role="TrG5h" value="Cloud Provider" />
+      <property role="TrG5h" value="CloudProvider" />
       <node concept="1W57fq" id="4RUYTz1VDtO" role="lGtFl">
         <node concept="3IZrLx" id="4RUYTz1VDtP" role="3IZSJc">
           <node concept="3clFbS" id="4RUYTz1VDtQ" role="2VODD2">
@@ -1511,7 +1511,7 @@
                     </node>
                   </node>
                   <node concept="Xl_RD" id="4RUYTz1Vx58" role="3uHU7w">
-                    <property role="Xl_RC" value="HostedOn" />
+                    <property role="Xl_RC" value="_HostedOn_" />
                   </node>
                 </node>
               </node>
