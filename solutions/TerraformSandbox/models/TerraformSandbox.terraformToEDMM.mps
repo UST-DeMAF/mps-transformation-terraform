@@ -37,6 +37,22 @@
       <property role="3RZkp" value="test" />
       <property role="3RZqf" value="variableValue" />
     </node>
+    <node concept="3Q0$U" id="1DfWVAFBCsy" role="3RZBQ">
+      <property role="3Q0SZ" value="testContainer" />
+      <property role="3Q0Jh" value="docker_container" />
+      <node concept="3Q103" id="1DfWVAFBCwe" role="3Q1MN">
+        <property role="3Q16K" value="image" />
+        <property role="3Q1ci" value="myImage/mysql:5.3.8" />
+      </node>
+      <node concept="3Q103" id="1DfWVAFBC$k" role="3Q1MN">
+        <property role="3Q16K" value="testArg" />
+        <property role="3Q1ci" value="testArgVal" />
+      </node>
+    </node>
+    <node concept="3Q0$U" id="1DfWVAFF1CW" role="3RZBQ">
+      <property role="3Q0SZ" value="testContainerWithoutImage" />
+      <property role="3Q0Jh" value="docker_container" />
+    </node>
     <node concept="3Q0$U" id="34jS6gMNpFx" role="3RZBQ">
       <property role="3Q0SZ" value="newVM" />
       <property role="3Q0Jh" value="customlocal3" />

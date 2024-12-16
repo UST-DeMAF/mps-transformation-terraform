@@ -16,7 +16,13 @@
         <property id="2620860285162130306" name="key" index="VmU49" />
         <property id="2620860285162130308" name="value" index="VmU4f" />
       </concept>
-      <concept id="2620860285162130361" name="EDMM.structure.ComponentType" flags="ng" index="VmU4M" />
+      <concept id="2620860285162130347" name="EDMM.structure.Artifact" flags="ng" index="VmU4w">
+        <property id="5202003258016803148" name="type" index="2iHhcE" />
+        <property id="2620860285162130350" name="fileURI" index="VmU4_" />
+      </concept>
+      <concept id="2620860285162130361" name="EDMM.structure.ComponentType" flags="ng" index="VmU4M">
+        <reference id="2877443765335980231" name="parentType" index="3hVscs" />
+      </concept>
       <concept id="2620860285162130367" name="EDMM.structure.Relation" flags="ng" index="VmU4O">
         <reference id="2620860285162130378" name="target" index="VmU51" />
         <reference id="2620860285162130370" name="type" index="VmU59" />
@@ -27,6 +33,7 @@
       </concept>
       <concept id="2620860285162130372" name="EDMM.structure.Component" flags="ng" index="VmU5f">
         <reference id="2620860285162130373" name="type" index="VmU5e" />
+        <child id="2877443765335994034" name="artifacts" index="3hVhlD" />
       </concept>
       <concept id="2620860285162130297" name="EDMM.structure.DeploymentModel" flags="ng" index="VmU7M">
         <child id="2620860285162130303" name="modelEntities" index="VmU7O" />
@@ -37,8 +44,13 @@
     </language>
   </registry>
   <node concept="VmU7M" id="gP6P4MQqI5">
+    <node concept="VmU4M" id="1DfWVAFXajl" role="VmU7O">
+      <property role="TrG5h" value="BaseType" />
+    </node>
+    <node concept="VmU7R" id="1DfWVAFXahj" role="VmU7O" />
     <node concept="VmU4M" id="5wF4P8PFUHo" role="VmU7O">
       <property role="TrG5h" value="azurerm_testResourceType" />
+      <ref role="3hVscs" node="1DfWVAFXajl" resolve="BaseType" />
       <node concept="VmU4a" id="5wF4P8PFUHp" role="VmU4F">
         <property role="VmU49" value="arg" />
       </node>
@@ -184,11 +196,12 @@
       <ref role="VmU5e" node="5wF4P8PFVdB" resolve="aws_vm_testResoruceAws" />
     </node>
     <node concept="VmU5f" id="5wF4P8PFXVp" role="VmU7O">
-      <property role="TrG5h" value="resorceDocker" />
+      <property role="TrG5h" value="resourceDocker" />
       <ref role="VmU5e" node="5wF4P8PFVEx" resolve="docker_container_resorceDocker" />
-      <node concept="VmU4a" id="5wF4P8PFXVq" role="VmU4F">
-        <property role="VmU49" value="docker_image" />
-        <property role="VmU4f" value="ghcr.io/myNiceImage" />
+      <node concept="VmU4w" id="1DfWVAFXabQ" role="3hVhlD">
+        <property role="2iHhcE" value="docker_image" />
+        <property role="TrG5h" value="ghcr.io/myNiceImag" />
+        <property role="VmU4_" value=" " />
       </node>
     </node>
     <node concept="VmU5f" id="gP6P4MQqIc" role="VmU7O">
@@ -197,6 +210,7 @@
     </node>
     <node concept="VmU4M" id="5wF4P8PFVix" role="VmU7O">
       <property role="TrG5h" value="azurerm_vm" />
+      <ref role="3hVscs" node="1DfWVAFXajl" resolve="BaseType" />
       <node concept="VmU4a" id="2DNANZnFzjQ" role="VmU4F">
         <property role="VmU49" value="sharedArgument" />
       </node>
@@ -212,24 +226,30 @@
     </node>
     <node concept="VmU4M" id="4RUYTz2fwCE" role="VmU7O">
       <property role="TrG5h" value="azurerm_network" />
+      <ref role="3hVscs" node="1DfWVAFXajl" resolve="BaseType" />
     </node>
     <node concept="VmU4M" id="5wF4P8PFVhi" role="VmU7O">
       <property role="TrG5h" value="google_vm_big" />
+      <ref role="3hVscs" node="1DfWVAFXajl" resolve="BaseType" />
     </node>
     <node concept="VmU4M" id="5wF4P8PFVdB" role="VmU7O">
       <property role="TrG5h" value="aws_vm" />
+      <ref role="3hVscs" node="1DfWVAFXajl" resolve="BaseType" />
     </node>
     <node concept="VmU4M" id="5wF4P8PFVEx" role="VmU7O">
       <property role="TrG5h" value="docker_container" />
+      <ref role="3hVscs" node="1DfWVAFXajl" resolve="BaseType" />
       <node concept="VmU4a" id="5wF4P8PFV_e" role="VmU4F">
         <property role="VmU49" value="docker_image" />
       </node>
     </node>
     <node concept="VmU4M" id="gP6P4MQqIe" role="VmU7O">
       <property role="TrG5h" value="xyz_arbitrary_type" />
+      <ref role="3hVscs" node="1DfWVAFXajl" resolve="BaseType" />
     </node>
     <node concept="VmU4M" id="5wF4P8PFVXD" role="VmU7O">
       <property role="TrG5h" value="CloudProvider" />
+      <ref role="3hVscs" node="1DfWVAFXajl" resolve="BaseType" />
     </node>
     <node concept="VmU4R" id="5wF4P8PFT6M" role="VmU7O">
       <property role="TrG5h" value="HostedOn" />

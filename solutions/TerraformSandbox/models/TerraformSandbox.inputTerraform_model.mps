@@ -153,10 +153,10 @@
       <property role="3Q0Jh" value="aws_vm" />
     </node>
     <node concept="3Q0$U" id="5wF4P8Py$ks" role="3RZBQ">
-      <property role="3Q0SZ" value="resorceDocker" />
+      <property role="3Q0SZ" value="resourceDocker" />
       <property role="3Q0Jh" value="docker_container" />
       <node concept="3Q103" id="5wF4P8Py$sZ" role="3Q1MN">
-        <property role="3Q16K" value="docker_image" />
+        <property role="3Q16K" value="image" />
         <property role="3Q1ci" value="ghcr.io/myNiceImage" />
       </node>
     </node>
