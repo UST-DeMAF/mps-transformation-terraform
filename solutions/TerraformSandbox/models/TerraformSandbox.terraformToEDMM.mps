@@ -66,7 +66,7 @@
           </node>
           <node concept="3Q103" id="7xk5uRluM4M" role="3Q1uZ">
             <property role="3Q16K" value="nestedBlockArgument2" />
-            <property role="3Q1ci" value="nestedBlockArgumentValue2" />
+            <property role="3Q1ci" value="&quot;&quot;nested&quot;BlockArgumentValue2&quot;&quot;&quot;" />
           </node>
         </node>
         <node concept="3Q1nZ" id="7xk5uRluYmN" role="2H9qWv">
