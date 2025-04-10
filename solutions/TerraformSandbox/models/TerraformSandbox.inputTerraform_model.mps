@@ -114,6 +114,13 @@
       <property role="3Q0Jh" value="azurerm_vm" />
       <node concept="3Q1nZ" id="2DNANZnFyLb" role="3Q1Wp">
         <property role="3Q1ry" value="thirdType" />
+        <node concept="3Q1nZ" id="1lng5hn$6Ia" role="2H9qWv">
+          <property role="3Q1ry" value="nesting" />
+          <node concept="3Q103" id="1lng5hn$6Ic" role="3Q1uZ">
+            <property role="3Q16K" value="nestingArg" />
+            <property role="3Q1ci" value="fantasy" />
+          </node>
+        </node>
         <node concept="3Q103" id="2DNANZnFyMP" role="3Q1uZ">
           <property role="3Q16K" value="thirdTypeArgument" />
           <property role="3Q1ci" value="thirdTypeArgumentValue" />
@@ -139,10 +146,30 @@
         <property role="3Q16K" value="sharedArgument" />
         <property role="3Q1ci" value="sharedArgumentValue4" />
       </node>
+      <node concept="3Q103" id="1lng5hn_WGt" role="3Q1MN">
+        <property role="3Q16K" value="variableRef" />
+        <property role="3Q1ci" value="var.test" />
+      </node>
     </node>
     <node concept="3Q0$U" id="4RUYTz2c8E2" role="3RZBQ">
       <property role="3Q0SZ" value="testResource2" />
       <property role="3Q0Jh" value="azurerm_network" />
+      <node concept="3Q103" id="1lng5hmT9hH" role="3Q1MN">
+        <property role="3Q16K" value="referenceArg" />
+        <property role="3Q1ci" value="azurerm_vm.testResource4.resource4Argument" />
+      </node>
+      <node concept="3Q103" id="1lng5hn_WGx" role="3Q1MN">
+        <property role="3Q16K" value="referenceArgVar" />
+        <property role="3Q1ci" value="azurerm_vm.testResource4.variableRef" />
+      </node>
+      <node concept="3Q103" id="1lng5hnxBYn" role="3Q1MN">
+        <property role="3Q16K" value="referenceBlock" />
+        <property role="3Q1ci" value="azurerm_vm.testResource3.thirdType.thirdTypeArgument" />
+      </node>
+      <node concept="3Q103" id="1lng5hn$6I6" role="3Q1MN">
+        <property role="3Q16K" value="referenceNestedBlock" />
+        <property role="3Q1ci" value="azurerm_vm.testResource3.thirdType.nesting.nestingArg" />
+      </node>
     </node>
     <node concept="3Q0$U" id="5wF4P8PCqRF" role="3RZBQ">
       <property role="3Q0SZ" value="testResourceGoogle" />
