@@ -137,7 +137,7 @@
     </node>
     <node concept="3Q0$U" id="2DNANZmTaYc" role="3RZBQ">
       <property role="3Q0SZ" value="testResource4" />
-      <property role="3Q0Jh" value="azurerm_vm" />
+      <property role="3Q0Jh" value="azurerm_kubernetes_cluster" />
       <node concept="3Q103" id="2DNANZmTb1O" role="3Q1MN">
         <property role="3Q16K" value="resource4Argument" />
         <property role="3Q1ci" value="resource4ArgumentValue" />

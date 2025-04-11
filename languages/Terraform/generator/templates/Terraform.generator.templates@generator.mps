@@ -55,6 +55,9 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -169,6 +172,7 @@
         <reference id="1722980698497626483" name="template" index="v9R2y" />
         <child id="1722980698497626405" name="actualArgument" index="v9R3O" />
       </concept>
+      <concept id="5133195082121471908" name="jetbrains.mps.lang.generator.structure.LabelMacro" flags="ln" index="2ZBi8u" />
       <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
@@ -323,7 +327,9 @@
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="3055999550620853964" name="jetbrains.mps.baseLanguage.collections.structure.RemoveWhereOperation" flags="nn" index="1aUR6E" />
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
+      <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
     <language id="f14a2376-c0aa-410c-b33a-ef6b7f4e7a0c" name="EDMM">
       <concept id="2620860285162130305" name="EDMM.structure.Property" flags="ng" index="VmU4a">
@@ -371,6 +377,21 @@
       <property role="TrG5h" value="resourceComponent" />
       <ref role="2rTdP9" to="cj2j:34jS6gMMY_u" resolve="Resource" />
       <ref role="2rZz_L" to="9rr7:2hvaCGv18J4" resolve="Component" />
+    </node>
+    <node concept="2rT7sh" id="3Ro6Mdnr1aK" role="2rTMjI">
+      <property role="TrG5h" value="baseType" />
+      <ref role="2rTdP9" to="cj2j:2LhqwebOi8z" resolve="TerraformDeploymentModel" />
+      <ref role="2rZz_L" to="9rr7:2hvaCGv18IT" resolve="ComponentType" />
+    </node>
+    <node concept="2rT7sh" id="3Ro6MdnqZGT" role="2rTMjI">
+      <property role="TrG5h" value="kubernetesClusterType" />
+      <ref role="2rZz_L" to="9rr7:2hvaCGv18IT" resolve="ComponentType" />
+      <ref role="2rTdP9" to="cj2j:2LhqwebOi8z" resolve="TerraformDeploymentModel" />
+    </node>
+    <node concept="2rT7sh" id="3Ro6Mdod3qy" role="2rTMjI">
+      <property role="TrG5h" value="databaseType" />
+      <ref role="2rTdP9" to="cj2j:2LhqwebOi8z" resolve="TerraformDeploymentModel" />
+      <ref role="2rZz_L" to="9rr7:2hvaCGv18IT" resolve="ComponentType" />
     </node>
     <node concept="3aamgX" id="7xk5uRls1Jo" role="3acgRq">
       <ref role="30HIoZ" to="cj2j:34jS6gMMY_u" resolve="Resource" />
@@ -436,6 +457,9 @@
     </node>
     <node concept="1puMqW" id="2DNANZmT_gE" role="1pvy6N">
       <ref role="1puQsG" node="2DNANZmTbjB" resolve="mergeComponentTypes" />
+    </node>
+    <node concept="1puMqW" id="3Ro6MdnB0XG" role="1pvy6N">
+      <ref role="1puQsG" node="3Ro6MdnB1gI" resolve="removeUnusedComponentTypes" />
     </node>
   </node>
   <node concept="1pmfR0" id="2LhqwebOUCy">
@@ -885,6 +909,120 @@
                     <ref role="3TtcxE" to="cj2j:34jS6gMMZXX" resolve="blocks" />
                   </node>
                   <node concept="30H73N" id="7xk5uRlsxfU" role="2Oq$k0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1ZhdrF" id="3Ro6MdnqNKy" role="lGtFl">
+        <property role="2qtEX8" value="parentType" />
+        <property role="P3scX" value="f14a2376-c0aa-410c-b33a-ef6b7f4e7a0c/2620860285162130361/2877443765335980231" />
+        <node concept="3$xsQk" id="3Ro6MdnqNKz" role="3$ytzL">
+          <node concept="3clFbS" id="3Ro6MdnqNK$" role="2VODD2">
+            <node concept="3clFbJ" id="3Ro6MdnqQLb" role="3cqZAp">
+              <node concept="2OqwBi" id="3Ro6MdnqS0c" role="3clFbw">
+                <node concept="10M0yZ" id="3Ro6MdnqRbP" role="2Oq$k0">
+                  <ref role="3cqZAo" to="mdzn:3Ro6MdnqOx2" resolve="kubernetesClusterTypes" />
+                  <ref role="1PxDUh" to="mdzn:3Ro6MdnqOps" resolve="ComponentTypeUtil" />
+                </node>
+                <node concept="3JPx81" id="3Ro6MdnqTyS" role="2OqNvi">
+                  <node concept="2OqwBi" id="3Ro6MdnqTIC" role="25WWJ7">
+                    <node concept="30H73N" id="3Ro6MdnqT_8" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="3Ro6MdnqTTn" role="2OqNvi">
+                      <ref role="3TsBF5" to="cj2j:34jS6gMMYIP" resolve="type" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="3Ro6MdnqQLd" role="3clFbx">
+                <node concept="3cpWs6" id="3Ro6Mdnties" role="3cqZAp">
+                  <node concept="2OqwBi" id="3Ro6Mdntiet" role="3cqZAk">
+                    <node concept="1iwH7S" id="3Ro6Mdntieu" role="2Oq$k0" />
+                    <node concept="1iwH70" id="3Ro6Mdntiev" role="2OqNvi">
+                      <ref role="1iwH77" node="3Ro6MdnqZGT" resolve="kubernetesClusterType" />
+                      <node concept="2OqwBi" id="3Ro6Mdntiew" role="1iwH7V">
+                        <node concept="2OqwBi" id="3Ro6Mdntiex" role="2Oq$k0">
+                          <node concept="2OqwBi" id="3Ro6Mdntiey" role="2Oq$k0">
+                            <node concept="1iwH7S" id="3Ro6Mdntiez" role="2Oq$k0" />
+                            <node concept="1r8y6K" id="3Ro6Mdntie$" role="2OqNvi" />
+                          </node>
+                          <node concept="2SmgA7" id="3Ro6Mdntie_" role="2OqNvi">
+                            <node concept="chp4Y" id="3Ro6MdntieA" role="1dBWTz">
+                              <ref role="cht4Q" to="cj2j:2LhqwebOi8z" resolve="TerraformDeploymentModel" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="1uHKPH" id="3Ro6MdntieB" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3eNFk2" id="3Ro6Mdod8lN" role="3eNLev">
+                <node concept="2OqwBi" id="3Ro6Mdod9My" role="3eO9$A">
+                  <node concept="10M0yZ" id="3Ro6Mdod8Uu" role="2Oq$k0">
+                    <ref role="3cqZAo" to="mdzn:3Ro6Mdod1dN" resolve="databaseTypes" />
+                    <ref role="1PxDUh" to="mdzn:3Ro6MdnqOps" resolve="ComponentTypeUtil" />
+                  </node>
+                  <node concept="3JPx81" id="3Ro6Mdoda_C" role="2OqNvi">
+                    <node concept="2OqwBi" id="3Ro6MdodaQ2" role="25WWJ7">
+                      <node concept="30H73N" id="3Ro6MdodaEl" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="3Ro6MdodbcU" role="2OqNvi">
+                        <ref role="3TsBF5" to="cj2j:34jS6gMMYIP" resolve="type" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbS" id="3Ro6Mdod8lP" role="3eOfB_">
+                  <node concept="3cpWs6" id="3Ro6MdodbhZ" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Ro6MdodbFa" role="3cqZAk">
+                      <node concept="1iwH7S" id="3Ro6Mdodbne" role="2Oq$k0" />
+                      <node concept="1iwH70" id="3Ro6MdodbRt" role="2OqNvi">
+                        <ref role="1iwH77" node="3Ro6Mdod3qy" resolve="databaseType" />
+                        <node concept="2OqwBi" id="3Ro6Mdodc6L" role="1iwH7V">
+                          <node concept="2OqwBi" id="3Ro6Mdodc6M" role="2Oq$k0">
+                            <node concept="2OqwBi" id="3Ro6Mdodc6N" role="2Oq$k0">
+                              <node concept="1iwH7S" id="3Ro6Mdodc6O" role="2Oq$k0" />
+                              <node concept="1r8y6K" id="3Ro6Mdodc6P" role="2OqNvi" />
+                            </node>
+                            <node concept="2SmgA7" id="3Ro6Mdodc6Q" role="2OqNvi">
+                              <node concept="chp4Y" id="3Ro6Mdodc6R" role="1dBWTz">
+                                <ref role="cht4Q" to="cj2j:2LhqwebOi8z" resolve="TerraformDeploymentModel" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="1uHKPH" id="3Ro6Mdodc6S" role="2OqNvi" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="9aQIb" id="3Ro6Mdod8yK" role="9aQIa">
+                <node concept="3clFbS" id="3Ro6Mdod8yL" role="9aQI4">
+                  <node concept="3cpWs6" id="3Ro6Mdnt8qZ" role="3cqZAp">
+                    <node concept="2OqwBi" id="3Ro6Mdnt8N5" role="3cqZAk">
+                      <node concept="1iwH7S" id="3Ro6Mdnt8ui" role="2Oq$k0" />
+                      <node concept="1iwH70" id="3Ro6Mdnt906" role="2OqNvi">
+                        <ref role="1iwH77" node="3Ro6Mdnr1aK" resolve="baseType" />
+                        <node concept="2OqwBi" id="3Ro6MdnteP7" role="1iwH7V">
+                          <node concept="2OqwBi" id="3Ro6Mdnt9wO" role="2Oq$k0">
+                            <node concept="2OqwBi" id="3Ro6Mdnt9fz" role="2Oq$k0">
+                              <node concept="1iwH7S" id="3Ro6Mdnt9bq" role="2Oq$k0" />
+                              <node concept="1r8y6K" id="3Ro6Mdnt9k_" role="2OqNvi" />
+                            </node>
+                            <node concept="2SmgA7" id="3Ro6MdntcQh" role="2OqNvi">
+                              <node concept="chp4Y" id="3Ro6Mdntd93" role="1dBWTz">
+                                <ref role="cht4Q" to="cj2j:2LhqwebOi8z" resolve="TerraformDeploymentModel" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="1uHKPH" id="3Ro6Mdnti77" role="2OqNvi" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -1395,7 +1533,7 @@
     <ref role="3gUMe" to="cj2j:6zaxIwv2eRF" resolve="Provider" />
     <node concept="VmU7M" id="5L8981WfGSS" role="13RCb5">
       <node concept="VmU5f" id="5L8981WfH5$" role="VmU7O">
-        <property role="TrG5h" value="D" />
+        <property role="TrG5h" value="DummyName" />
         <ref role="VmU5e" node="1DfWVAFS5zb" resolve="CloudProvider" />
         <node concept="raruj" id="5L8981WfH7C" role="lGtFl">
           <ref role="2sdACS" node="5wF4P8P3uJ1" resolve="providerComponent" />
@@ -1426,6 +1564,31 @@
   <node concept="VmU7M" id="4RUYTz1VuA2">
     <node concept="VmU4M" id="1DfWVAFS8_N" role="VmU7O">
       <property role="TrG5h" value="BaseType" />
+      <node concept="2ZBi8u" id="3Ro6Mdnr1hp" role="lGtFl">
+        <ref role="2rW$FS" node="3Ro6Mdnr1aK" resolve="baseType" />
+      </node>
+    </node>
+    <node concept="VmU4M" id="3Ro6MdocYap" role="VmU7O">
+      <property role="TrG5h" value="SoftwareApplication" />
+      <ref role="3hVscs" node="1DfWVAFS8_N" resolve="BaseType" />
+    </node>
+    <node concept="VmU4M" id="3Ro6MdocZ07" role="VmU7O">
+      <property role="TrG5h" value="DatabaseSystem" />
+      <ref role="3hVscs" node="3Ro6MdocYap" resolve="SoftwareApplication" />
+      <node concept="2ZBi8u" id="3Ro6Mdod3xA" role="lGtFl">
+        <ref role="2rW$FS" node="3Ro6Mdod3qy" resolve="databaseType" />
+      </node>
+    </node>
+    <node concept="VmU4M" id="3Ro6MdnqW5Z" role="VmU7O">
+      <property role="TrG5h" value="ContainerPlatform" />
+      <ref role="3hVscs" node="1DfWVAFS8_N" resolve="BaseType" />
+    </node>
+    <node concept="VmU4M" id="3Ro6MdnqVpF" role="VmU7O">
+      <property role="TrG5h" value="KubernetesCluster" />
+      <ref role="3hVscs" node="3Ro6MdnqW5Z" resolve="ContainerPlatform" />
+      <node concept="2ZBi8u" id="3Ro6Mdnr0dm" role="lGtFl">
+        <ref role="2rW$FS" node="3Ro6MdnqZGT" resolve="kubernetesClusterType" />
+      </node>
     </node>
     <node concept="VmU4M" id="4RUYTz1VDtE" role="VmU7O">
       <property role="TrG5h" value="NewComponentType" />
@@ -2212,6 +2375,20 @@
                 <ref role="cht4Q" to="9rr7:2hvaCGv18IT" resolve="ComponentType" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1pmfR0" id="3Ro6MdnB1gI">
+    <property role="TrG5h" value="removeUnusedComponentTypes" />
+    <node concept="1pplIY" id="3Ro6MdnB1gJ" role="1pqMTA">
+      <node concept="3clFbS" id="3Ro6MdnB1gK" role="2VODD2">
+        <node concept="3clFbF" id="3Ro6MdnBvqs" role="3cqZAp">
+          <node concept="2YIFZM" id="3Ro6MdnBvtd" role="3clFbG">
+            <ref role="37wK5l" to="mdzn:3Ro6MdnBrvz" resolve="removeUnusedComponentTypes" />
+            <ref role="1Pybhc" to="mdzn:3Ro6MdnqOps" resolve="ComponentTypeUtil" />
+            <node concept="1Q6Npb" id="3Ro6MdoaXSD" role="37wK5m" />
           </node>
         </node>
       </node>
