@@ -136,7 +136,7 @@
       </node>
       <node concept="3Q103" id="69gBb5oLD$F" role="3Q1MN">
         <property role="3Q16K" value="depends_on" />
-        <property role="3Q1ci" value="[testResource4, testResource2, xcx, default_resource group]" />
+        <property role="3Q1ci" value="[azurerm_kubernetes_cluster.testResource4, azurerm_vm.testResource2, xcx, azurerm_resource_group.default_resource group]" />
       </node>
     </node>
     <node concept="3Q0$U" id="2DNANZmTaYc" role="3RZBQ">

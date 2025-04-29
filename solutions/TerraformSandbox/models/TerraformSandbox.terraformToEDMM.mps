@@ -29,10 +29,17 @@
       <concept id="3193450174245577251" name="Terraform.structure.TerraformDeploymentModel" flags="ng" index="2Bw4ww">
         <child id="3536416853369559442" name="resources" index="3RZBQ" />
         <child id="3536416853369560877" name="variables" index="3RZX9" />
+        <child id="7550996056751272080" name="providers" index="1RKBpS" />
+      </concept>
+      <concept id="7550996056751271403" name="Terraform.structure.Provider" flags="ng" index="1RKAG3">
+        <property id="7550996056751277899" name="name" index="1RKS6z" />
       </concept>
     </language>
   </registry>
   <node concept="2Bw4ww" id="2LhqwebRs23">
+    <node concept="1RKAG3" id="6Llz94KE6RX" role="1RKBpS">
+      <property role="1RKS6z" value="kreuzwerker/docker" />
+    </node>
     <node concept="3RZbq" id="7xk5uRlwiYD" role="3RZX9">
       <property role="3RZkp" value="test" />
       <property role="3RZqf" value="variableValue" />

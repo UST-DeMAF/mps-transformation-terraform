@@ -313,6 +313,36 @@
             </node>
           </node>
         </node>
+        <node concept="1ZhdrF" id="6Llz94KoMlZ" role="lGtFl">
+          <property role="2qtEX8" value="type" />
+          <property role="P3scX" value="f14a2376-c0aa-410c-b33a-ef6b7f4e7a0c/2620860285162130367/2620860285162130370" />
+          <node concept="3$xsQk" id="6Llz94KoMm0" role="3$ytzL">
+            <node concept="3clFbS" id="6Llz94KoMm1" role="2VODD2">
+              <node concept="3cpWs6" id="6Llz94KoNTE" role="3cqZAp">
+                <node concept="2OqwBi" id="6Llz94KoNTF" role="3cqZAk">
+                  <node concept="1iwH7S" id="6Llz94KoNTG" role="2Oq$k0" />
+                  <node concept="1iwH70" id="6Llz94KoNTH" role="2OqNvi">
+                    <ref role="1iwH77" to="gmv3:6Llz94KoL7t" resolve="hostedOnType" />
+                    <node concept="2OqwBi" id="6Llz94KoNTI" role="1iwH7V">
+                      <node concept="2OqwBi" id="6Llz94KoNTJ" role="2Oq$k0">
+                        <node concept="2OqwBi" id="6Llz94KoNTK" role="2Oq$k0">
+                          <node concept="1iwH7S" id="6Llz94KoNTL" role="2Oq$k0" />
+                          <node concept="1r8y6K" id="6Llz94KoNTM" role="2OqNvi" />
+                        </node>
+                        <node concept="2SmgA7" id="6Llz94KoNTN" role="2OqNvi">
+                          <node concept="chp4Y" id="6Llz94KoNTO" role="1dBWTz">
+                            <ref role="cht4Q" to="cj2j:2LhqwebOi8z" resolve="TerraformDeploymentModel" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="6Llz94KoNTP" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
