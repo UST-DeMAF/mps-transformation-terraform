@@ -1,0 +1,545 @@
+<TechnologyAgnosticDeploymentModel>
+    <id>22de889f-a047-4bb8-bf1a-35423489150d</id>
+    <transformationProcessId>91c747bf-22e5-4341-9116-2a61e9a5c17c</transformationProcessId>
+    <properties />
+    <components>
+        <components>
+            <id>ac4396af-f68a-46f7-a6ee-479c2b1f9df3</id>
+            <name>myCluster</name>
+            <description />
+            <properties />
+            <operations />
+            <type>
+                <id>528e2123-b990-4f36-a35e-596c95143995</id>
+                <name>CloudProviderCluster</name>
+                <description />
+                <parentType>
+                    <id>edb5e135-3138-4698-9683-fddbba1de31a</id>
+                    <name>KubernetesCluster</name>
+                    <description />
+                    <parentType>
+                        <id>e62fcbf5-1789-429c-89e3-c87f00d12247</id>
+                        <name>ContainerPlatform</name>
+                        <description />
+                        <parentType>
+                            <id>f8c33dc1-c0d6-435b-a8c0-cb84c0454161</id>
+                            <name>BaseType</name>
+                            <description />
+                            <properties />
+                            <operations />
+                            <parentType />
+                        </parentType>
+                    </parentType>
+                </parentType>
+            </type>
+            <artifacts />
+            <confidence>SUSPECTED</confidence>
+            <confirmed>false</confirmed>
+        </components>
+        <components>
+            <id>722407e7-81f4-486b-bf45-dcf5e3b68098</id>
+            <name>myDatabase</name>
+            <description />
+            <properties>
+                <properties>
+                    <key>dbName</key>
+                    <type>STRING</type>
+                    <required>false</required>
+                    <value>testDB</value>
+                    <confidence>CONFIRMED</confidence>
+                </properties>
+            </properties>
+            <operations />
+            <type>
+                <id>afc225e6-4d9f-4cf3-84b5-9a421c8d756c</id>
+                <name>DatabaseType</name>
+                <description />
+                <properties>
+                    <properties>
+                        <key>dbName</key>
+                        <type>STRING</type>
+                        <required>false</required>
+                        <value>testDB</value>
+                        <confidence>CONFIRMED</confidence>
+                    </properties>
+                </properties>
+                <operations />
+                <parentType>
+                    <id>f8c33dc1-c0d6-435b-a8c0-cb84c0454161</id>
+                    <name>BaseType</name>
+                    <description />
+                    <properties />
+                    <operations />
+                    <parentType />
+                </parentType>
+            </type>
+            <artifacts />
+            <confidence>SUSPECTED</confidence>
+            <confirmed>false</confirmed>
+        </components>
+        <components>
+            <id>b7dd72e5-487a-4a15-ad46-cf12c61e2a49</id>
+            <name>frontend</name>
+            <description />
+            <properties>
+                <properties>
+                    <key>name</key>
+                    <type>STRING</type>
+                    <required>false</required>
+                    <value>frontend</value>
+                    <confidence>CONFIRMED</confidence>
+                </properties>
+                <properties>
+                    <key>connectToBackend</key>
+                    <type>STRING</type>
+                    <required>false</required>
+                    <value>https://dummyService:80</value>
+                    <confidence>CONFIRMED</confidence>
+                </properties>
+            </properties>
+            <operations />
+            <type>
+                <id>d05803b9-5f87-45c1-95fa-b3a7a3f3e4a2</id>
+                <name>FrontendType</name>
+                <description />
+                <properties>
+                    <properties>
+                        <key>name</key>
+                        <type>STRING</type>
+                        <required>false</required>
+                        <value>frontend</value>
+                        <confidence>CONFIRMED</confidence>
+                    </properties>
+                    <properties>
+                        <key>connectToBackend</key>
+                        <type>STRING</type>
+                        <required>false</required>
+                        <value>https://dummyService:80</value>
+                        <confidence>CONFIRMED</confidence>
+                    </properties>
+                </properties>
+                <operations />
+                <parentType>
+                    <id>f8c33dc1-c0d6-435b-a8c0-cb84c0454161</id>
+                    <name>BaseType</name>
+                    <description />
+                    <properties />
+                    <operations />
+                    <parentType />
+                </parentType>
+            </type>
+            <artifacts>
+                <artifacts>
+                    <name>frontend:1.2.3</name>
+                    <type>docker_image</type>
+                    <fileURI />
+                    <confidence>SUSPECTED</confidence>
+                    <confirmed>false</confirmed>
+                </artifacts>
+            </artifacts>
+            <confidence>SUSPECTED</confidence>
+            <confirmed>false</confirmed>
+        </components>
+        <components>
+            <id>ac4396af-f68a-46f7-a6ee-479c2b1f9d63</id>
+            <name>dummyExistingDeployment</name>
+            <description />
+            <properties>
+                <properties>
+                    <key>containerPort</key>
+                    <type>INTEGER</type>
+                    <required>false</required>
+                    <value>8080</value>
+                    <confidence>CONFIRMED</confidence>
+                </properties>
+                <properties>
+                    <key>dummyEnv</key>
+                    <type>STRING</type>
+                    <required>false</required>
+                    <value>dummyEnvVal</value>
+                    <confidence>CONFIRMED</confidence>
+                </properties>
+                <properties>
+                    <key>exposedPort_defaultPort</key>
+                    <type>STRING</type>
+                    <required>false</required>
+                    <value>80:8080</value>
+                    <confidence>CONFIRMED</confidence>
+                </properties>
+            </properties>
+            <operations />
+            <type>
+                <id>d05803b9-5f87-45c1-95fa-b3a7a3f3u8a2</id>
+                <name>dummyExistingDeploymentType</name>
+                <description />
+                <properties>
+                    <properties>
+                        <key>containerPort</key>
+                        <type>INTEGER</type>
+                        <required>false</required>
+                        <value>8080</value>
+                        <confidence>CONFIRMED</confidence>
+                    </properties>
+                    <properties>
+                        <key>dummyEnv</key>
+                        <type>STRING</type>
+                        <required>false</required>
+                        <value>dummyEnvVal</value>
+                        <confidence>CONFIRMED</confidence>
+                    </properties>
+                    <properties>
+                        <key>exposedPort_defaultPort</key>
+                        <type>STRING</type>
+                        <required>false</required>
+                        <value>80:8080</value>
+                        <confidence>CONFIRMED</confidence>
+                    </properties>
+                </properties>
+                <operations />
+                <parentType>
+                    <id>f8c33dc1-c0d6-435b-a8c0-cb84c0454161</id>
+                    <name>BaseType</name>
+                    <description />
+                    <properties />
+                    <operations />
+                    <parentType />
+                </parentType>
+            </type>
+            <artifacts>
+                <artifacts>
+                    <name>dummyRepo/dummyExistingDeployment:main</name>
+                    <type>docker_image</type>
+                    <fileURI />
+                    <confidence>SUSPECTED</confidence>
+                    <confirmed>false</confirmed>
+                </artifacts>
+            </artifacts>
+            <confidence>SUSPECTED</confidence>
+            <confirmed>false</confirmed>
+        </components>
+    </components>
+    <relations>
+        <relations>
+            <id>49cceb12-2611-4a53-9870-60dfabed4d9f</id>
+            <name>frontend_ConnectsTo_database</name>
+            <description />
+            <properties />
+            <operations />
+            <type>
+                <id>4333b78c-7009-4d46-9361-6af2d62261eb</id>
+                <name>ConnectsTo</name>
+                <description />
+                <properties />
+                <operations />
+                <parentType>
+                    <id>01189184-4aec-4bf0-b72b-e75e09970d36</id>
+                    <name>DependsOn</name>
+                    <description />
+                    <properties />
+                    <operations />
+                    <parentType />
+                </parentType>
+            </type>
+            <source>
+                <id>b7dd72e5-487a-4a15-ad46-cf12c61e2a49</id>
+                <name>frontend</name>
+                <description />
+                <properties>
+                    <properties>
+                        <key>name</key>
+                        <type>STRING</type>
+                        <required>false</required>
+                        <value>frontend</value>
+                        <confidence>CONFIRMED</confidence>
+                    </properties>
+                    <properties>
+                        <key>connectToBackend</key>
+                        <type>STRING</type>
+                        <required>false</required>
+                        <value>https://dummyService:80</value>
+                        <confidence>CONFIRMED</confidence>
+                    </properties>
+                </properties>
+                <operations />
+                <type>
+                    <id>d05803b9-5f87-45c1-95fa-b3a7a3f3e4a2</id>
+                    <name>FrontendType</name>
+                    <description />
+                    <properties>
+                        <properties>
+                            <key>name</key>
+                            <type>STRING</type>
+                            <required>false</required>
+                            <value>frontend</value>
+                            <confidence>CONFIRMED</confidence>
+                        </properties>
+                        <properties>
+                            <key>connectToBackend</key>
+                            <type>STRING</type>
+                            <required>false</required>
+                            <value>https://dummyService:80</value>
+                            <confidence>CONFIRMED</confidence>
+                        </properties>
+                    </properties>
+                    <operations />
+                    <parentType>
+                        <id>f8c33dc1-c0d6-435b-a8c0-cb84c0454161</id>
+                        <name>BaseType</name>
+                        <description />
+                        <properties />
+                        <operations />
+                        <parentType />
+                    </parentType>
+                </type>
+                <artifacts>
+                    <artifacts>
+                        <name>frontend:1.2.3</name>
+                        <type>docker_image</type>
+                        <fileURI />
+                        <confidence>SUSPECTED</confidence>
+                        <confirmed>false</confirmed>
+                    </artifacts>
+                </artifacts>
+                <confidence>SUSPECTED</confidence>
+                <confirmed>false</confirmed>
+            </source>
+            <target>
+                <id>722407e7-81f4-486b-bf45-dcf5e3b68098</id>
+                <name>myDatabase</name>
+                <description />
+                <properties>
+                    <properties>
+                        <key>dbName</key>
+                        <type>STRING</type>
+                        <required>false</required>
+                        <value>testDB</value>
+                        <confidence>CONFIRMED</confidence>
+                    </properties>
+                </properties>
+                <operations />
+                <type>
+                    <id>afc225e6-4d9f-4cf3-84b5-9a421c8d756c</id>
+                    <name>DatabaseType</name>
+                    <description />
+                    <properties>
+                        <properties>
+                            <key>dbName</key>
+                            <type>STRING</type>
+                            <required>false</required>
+                            <value>testDB</value>
+                            <confidence>CONFIRMED</confidence>
+                        </properties>
+                    </properties>
+                    <operations />
+                    <parentType>
+                        <id>f8c33dc1-c0d6-435b-a8c0-cb84c0454161</id>
+                        <name>BaseType</name>
+                        <description />
+                        <properties />
+                        <operations />
+                        <parentType />
+                    </parentType>
+                </type>
+                <artifacts />
+                <confidence>SUSPECTED</confidence>
+                <confirmed>false</confirmed>
+            </target>
+            <confidence>SUSPECTED</confidence>
+            <confirmed>false</confirmed>
+        </relations>
+    </relations>
+    <componentTypes>
+        <componentTypes>
+            <id>f8c33dc1-c0d6-435b-a8c0-cb84c0454161</id>
+            <name>BaseType</name>
+            <description />
+            <properties />
+            <operations />
+            <parentType />
+        </componentTypes>
+        <componentTypes>
+            <id>e62fcbf5-1789-429c-89e3-c87f00d12247</id>
+            <name>ContainerPlatform</name>
+            <description />
+            <parentType>
+                <id>f8c33dc1-c0d6-435b-a8c0-cb84c0454161</id>
+                <name>BaseType</name>
+                <description />
+                <properties />
+                <operations />
+                <parentType />
+            </parentType>
+        </componentTypes>
+        <componentTypes>
+            <id>edb5e135-3138-4698-9683-fddbba1de31a</id>
+            <name>KubernetesCluster</name>
+            <description />
+            <parentType>
+                <id>e62fcbf5-1789-429c-89e3-c87f00d12247</id>
+                <name>ContainerPlatform</name>
+                <description />
+                <parentType>
+                    <id>f8c33dc1-c0d6-435b-a8c0-cb84c0454161</id>
+                    <name>BaseType</name>
+                    <description />
+                    <properties />
+                    <operations />
+                    <parentType />
+                </parentType>
+            </parentType>
+        </componentTypes>
+        <componentTypes>
+            <id>528e2123-b990-4f36-a35e-596c95143995</id>
+            <name>CloudProviderCluster</name>
+            <description />
+            <parentType>
+                <id>edb5e135-3138-4698-9683-fddbba1de31a</id>
+                <name>KubernetesCluster</name>
+                <description />
+                <parentType>
+                    <id>e62fcbf5-1789-429c-89e3-c87f00d12247</id>
+                    <name>ContainerPlatform</name>
+                    <description />
+                    <parentType>
+                        <id>f8c33dc1-c0d6-435b-a8c0-cb84c0454161</id>
+                        <name>BaseType</name>
+                        <description />
+                        <properties />
+                        <operations />
+                        <parentType />
+                    </parentType>
+                </parentType>
+            </parentType>
+        </componentTypes>
+        <componentTypes>
+            <id>afc225e6-4d9f-4cf3-84b5-9a421c8d756c</id>
+            <name>DatabaseType</name>
+            <description />
+            <properties>
+                <properties>
+                    <key>dbName</key>
+                    <type>STRING</type>
+                    <required>false</required>
+                    <value>testDB</value>
+                    <confidence>CONFIRMED</confidence>
+                </properties>
+            </properties>
+            <operations />
+            <parentType>
+                <id>f8c33dc1-c0d6-435b-a8c0-cb84c0454161</id>
+                <name>BaseType</name>
+                <description />
+                <properties />
+                <operations />
+                <parentType />
+            </parentType>
+        </componentTypes>
+        <componentTypes>
+            <id>d05803b9-5f87-45c1-95fa-b3a7a3f3e4a2</id>
+            <name>FrontendType</name>
+            <description />
+            <properties>
+                <properties>
+                    <key>name</key>
+                    <type>STRING</type>
+                    <required>false</required>
+                    <value>frontend</value>
+                    <confidence>CONFIRMED</confidence>
+                </properties>
+                <properties>
+                    <key>connectToBackend</key>
+                    <type>STRING</type>
+                    <required>false</required>
+                    <value>https://dummyService:80</value>
+                    <confidence>CONFIRMED</confidence>
+                </properties>
+            </properties>
+            <operations />
+            <parentType>
+                <id>f8c33dc1-c0d6-435b-a8c0-cb84c0454161</id>
+                <name>BaseType</name>
+                <description />
+                <properties />
+                <operations />
+                <parentType />
+            </parentType>
+        </componentTypes>
+        <componentTypes>
+            <id>d05803b9-5f87-45c1-95fa-b3a7a3f3u8a2</id>
+            <name>dummyExistingDeploymentType</name>
+            <description />
+            <properties>
+                <properties>
+                    <key>containerPort</key>
+                    <type>INTEGER</type>
+                    <required>false</required>
+                    <value>8080</value>
+                    <confidence>CONFIRMED</confidence>
+                </properties>
+                <properties>
+                    <key>dummyEnv</key>
+                    <type>STRING</type>
+                    <required>false</required>
+                    <value>dummyEnvVal</value>
+                    <confidence>CONFIRMED</confidence>
+                </properties>
+                <properties>
+                    <key>exposedPort_defaultPort</key>
+                    <type>STRING</type>
+                    <required>false</required>
+                    <value>80:8080</value>
+                    <confidence>CONFIRMED</confidence>
+                </properties>
+            </properties>
+            <operations />
+            <parentType>
+                <id>f8c33dc1-c0d6-435b-a8c0-cb84c0454161</id>
+                <name>BaseType</name>
+                <description />
+                <properties />
+                <operations />
+                <parentType />
+            </parentType>
+        </componentTypes>
+    </componentTypes>
+    <relationTypes>
+        <relationTypes>
+            <id>01189184-4aec-4bf0-b72b-e75e09970d36</id>
+            <name>DependsOn</name>
+            <description />
+            <properties />
+            <operations />
+            <parentType />
+        </relationTypes>
+        <relationTypes>
+            <id>a6c35c80-0b86-465c-95ce-15b0ed5e5334</id>
+            <name>HostedOn</name>
+            <description />
+            <properties />
+            <operations />
+            <parentType>
+                <id>01189184-4aec-4bf0-b72b-e75e09970d36</id>
+                <name>DependsOn</name>
+                <description />
+                <properties />
+                <operations />
+                <parentType />
+            </parentType>
+        </relationTypes>
+        <relationTypes>
+            <id>4333b78c-7009-4d46-9361-6af2d62261eb</id>
+            <name>ConnectsTo</name>
+            <description />
+            <properties />
+            <operations />
+            <parentType>
+                <id>01189184-4aec-4bf0-b72b-e75e09970d36</id>
+                <name>DependsOn</name>
+                <description />
+                <properties />
+                <operations />
+                <parentType />
+            </parentType>
+        </relationTypes>
+    </relationTypes>
+</TechnologyAgnosticDeploymentModel>

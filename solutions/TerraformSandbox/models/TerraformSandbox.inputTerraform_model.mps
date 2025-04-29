@@ -134,6 +134,10 @@
         <property role="3Q16K" value="sharedArgument" />
         <property role="3Q1ci" value="sharedArgumentValue3" />
       </node>
+      <node concept="3Q103" id="69gBb5oLD$F" role="3Q1MN">
+        <property role="3Q16K" value="depends_on" />
+        <property role="3Q1ci" value="[testResource4, testResource2, xcx, default_resource group]" />
+      </node>
     </node>
     <node concept="3Q0$U" id="2DNANZmTaYc" role="3RZBQ">
       <property role="3Q0SZ" value="testResource4" />
@@ -186,10 +190,18 @@
         <property role="3Q16K" value="image" />
         <property role="3Q1ci" value="ghcr.io/myNiceImage" />
       </node>
+      <node concept="3Q103" id="2WTAWeyku6l" role="3Q1MN">
+        <property role="3Q16K" value="env" />
+        <property role="3Q1ci" value="[&quot;key1=value1&quot;,&quot;key2=13&quot;,&quot;key3=value3&quot;,&quot;key4=value4&quot;]" />
+      </node>
     </node>
     <node concept="3Q0$U" id="5wF4P8PCr5U" role="3RZBQ">
       <property role="3Q0SZ" value="testResourceWoProvider" />
       <property role="3Q0Jh" value="xyz_arbitrary_type" />
+    </node>
+    <node concept="3Q0$U" id="2WTAWey9DOE" role="3RZBQ">
+      <property role="3Q0SZ" value="default_resource group" />
+      <property role="3Q0Jh" value="azurerm_resource_group" />
     </node>
   </node>
 </model>

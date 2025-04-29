@@ -290,6 +290,11 @@
               <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
             </node>
           </node>
+          <node concept="1SiIV0" id="69gBb5p_0MY" role="3bR37C">
+            <node concept="3bR9La" id="69gBb5p_0MZ" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+            </node>
+          </node>
         </node>
         <node concept="3rtmxn" id="7kIsSRMe3LH" role="3bR31x">
           <node concept="3LXTmp" id="7kIsSRMe3LI" role="3rtmxm">
