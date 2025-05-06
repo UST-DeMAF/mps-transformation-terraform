@@ -160,11 +160,11 @@
       <property role="3Q0Jh" value="azurerm_network" />
       <node concept="3Q103" id="1lng5hmT9hH" role="3Q1MN">
         <property role="3Q16K" value="referenceArg" />
-        <property role="3Q1ci" value="azurerm_vm.testResource4.resource4Argument" />
+        <property role="3Q1ci" value="azurerm_kubernetes_cluster.testResource4.resource4Argument" />
       </node>
       <node concept="3Q103" id="1lng5hn_WGx" role="3Q1MN">
         <property role="3Q16K" value="referenceArgVar" />
-        <property role="3Q1ci" value="azurerm_vm.testResource4.variableRef" />
+        <property role="3Q1ci" value="azurerm_kubernetes_cluster.testResource4.variableRef" />
       </node>
       <node concept="3Q103" id="1lng5hnxBYn" role="3Q1MN">
         <property role="3Q16K" value="referenceBlock" />
@@ -192,7 +192,7 @@
       </node>
       <node concept="3Q103" id="2WTAWeyku6l" role="3Q1MN">
         <property role="3Q16K" value="env" />
-        <property role="3Q1ci" value="[&quot;key1=value1&quot;,&quot;key2=13&quot;,&quot;key3=value3&quot;,&quot;key4=value4&quot;]" />
+        <property role="3Q1ci" value="[&quot;key1=value1&quot;, &quot;key2=13&quot;, &quot;key3=value3&quot;, &quot;key4=value4&quot;]" />
       </node>
     </node>
     <node concept="3Q0$U" id="5wF4P8PCr5U" role="3RZBQ">
