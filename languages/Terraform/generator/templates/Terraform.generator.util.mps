@@ -1544,8 +1544,19 @@
                 <node concept="9aQIb" id="1lng5hnA0vE" role="9aQIa">
                   <node concept="3clFbS" id="1lng5hnA0vF" role="9aQI4">
                     <node concept="3cpWs6" id="1lng5hnA0Gc" role="3cqZAp">
-                      <node concept="37vLTw" id="1lng5hnA0Yw" role="3cqZAk">
-                        <ref role="3cqZAo" node="1lng5hn_Xcn" resolve="referencedExpression" />
+                      <node concept="2OqwBi" id="5VeUTbctFrL" role="3cqZAk">
+                        <node concept="37vLTw" id="1lng5hnA0Yw" role="2Oq$k0">
+                          <ref role="3cqZAo" node="1lng5hn_Xcn" resolve="referencedExpression" />
+                        </node>
+                        <node concept="liA8E" id="5VeUTbctFGL" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
+                          <node concept="Xl_RD" id="5VeUTbctFGM" role="37wK5m">
+                            <property role="Xl_RC" value="\\\&quot;" />
+                          </node>
+                          <node concept="Xl_RD" id="5VeUTbctFGN" role="37wK5m">
+                            <property role="Xl_RC" value="\&quot;" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -1567,7 +1578,7 @@
           <node concept="9aQIb" id="1lng5hnA6uw" role="9aQIa">
             <node concept="3clFbS" id="1lng5hnA6ux" role="9aQI4">
               <node concept="3cpWs6" id="1lng5hmT7T4" role="3cqZAp">
-                <node concept="2OqwBi" id="4_ZL2CcZ3mn" role="3cqZAk">
+                <node concept="2OqwBi" id="5VeUTbcnodA" role="3cqZAk">
                   <node concept="37vLTw" id="6r0JM_R_gar" role="2Oq$k0">
                     <ref role="3cqZAo" node="6r0JM_RnQP_" resolve="expression" />
                   </node>
