@@ -11,6 +11,7 @@
     <import index="r9z2" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.jdom.input(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="9rr7" ref="r:775c6bb1-2ef0-4cbc-bf58-15eda5ee6023(EDMM.structure)" />
+    <import index="ufpv" ref="r:74a7aa51-51bb-4f6f-87d3-99d422bfacf9(Terraform.generator.utilProvider)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -1501,6 +1502,43 @@
           </node>
           <node concept="3eNFk2" id="1lng5hmRF9C" role="3eNLev">
             <node concept="3clFbS" id="1lng5hmRF9E" role="3eOfB_">
+              <node concept="3clFbJ" id="5q1zSvmM_QH" role="3cqZAp">
+                <node concept="3clFbS" id="5q1zSvmM_QJ" role="3clFbx">
+                  <node concept="3cpWs6" id="5q1zSvmTW4g" role="3cqZAp">
+                    <node concept="2YIFZM" id="5q1zSvmU8Fe" role="3cqZAk">
+                      <ref role="37wK5l" to="ufpv:5q1zSvmTOfJ" resolve="resolveReferences" />
+                      <ref role="1Pybhc" to="ufpv:5q1zSvmFmk8" resolve="ProviderRandom" />
+                      <node concept="37vLTw" id="5q1zSvmU92u" role="37wK5m">
+                        <ref role="3cqZAo" node="6r0JM_RnQP_" resolve="expression" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="1Wc70l" id="5q1zSvmTKCV" role="3clFbw">
+                  <node concept="2OqwBi" id="5q1zSvmTLJC" role="3uHU7w">
+                    <node concept="37vLTw" id="5q1zSvmTL42" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6r0JM_RnQP_" resolve="expression" />
+                    </node>
+                    <node concept="liA8E" id="5q1zSvmTN2R" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String)" resolve="endsWith" />
+                      <node concept="Xl_RD" id="5q1zSvmTNpX" role="37wK5m">
+                        <property role="Xl_RC" value=".result" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="5q1zSvmMBlS" role="3uHU7B">
+                    <node concept="37vLTw" id="5q1zSvmMAeh" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6r0JM_RnQP_" resolve="expression" />
+                    </node>
+                    <node concept="liA8E" id="5q1zSvmMCAz" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
+                      <node concept="Xl_RD" id="5q1zSvmMD74" role="37wK5m">
+                        <property role="Xl_RC" value="random_" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3cpWs8" id="1lng5hn_Xck" role="3cqZAp">
                 <node concept="3cpWsn" id="1lng5hn_Xcn" role="3cpWs9">
                   <property role="TrG5h" value="referencedExpression" />
