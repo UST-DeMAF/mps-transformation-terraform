@@ -124,6 +124,7 @@
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -624,15 +625,29 @@
                 <node concept="1bVj0M" id="5q1zSvmFKbG" role="23t8la">
                   <node concept="3clFbS" id="5q1zSvmFKbH" role="1bW5cS">
                     <node concept="3clFbF" id="5q1zSvmFKbI" role="3cqZAp">
-                      <node concept="2OqwBi" id="5q1zSvmFKbJ" role="3clFbG">
-                        <node concept="liA8E" id="5q1zSvmFKbK" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
-                          <node concept="37vLTw" id="5q1zSvmFKbL" role="37wK5m">
-                            <ref role="3cqZAo" node="5q1zSvmFKbN" resolve="ignoredProvider" />
+                      <node concept="1Wc70l" id="48KNlsJdCoP" role="3clFbG">
+                        <node concept="3fqX7Q" id="48KNlsJdC$I" role="3uHU7w">
+                          <node concept="2OqwBi" id="48KNlsJdDVp" role="3fr31v">
+                            <node concept="37vLTw" id="48KNlsJdCGc" role="2Oq$k0">
+                              <ref role="3cqZAo" node="48KNlsJdxgL" resolve="allowedResourceTypes" />
+                            </node>
+                            <node concept="3JPx81" id="48KNlsJdFQ$" role="2OqNvi">
+                              <node concept="37vLTw" id="48KNlsJdG0v" role="25WWJ7">
+                                <ref role="3cqZAo" node="5q1zSvmFKbR" resolve="resourceType" />
+                              </node>
+                            </node>
                           </node>
                         </node>
-                        <node concept="37vLTw" id="5q1zSvmFKbM" role="2Oq$k0">
-                          <ref role="3cqZAo" node="5q1zSvmFKbR" resolve="resourceType" />
+                        <node concept="2OqwBi" id="5q1zSvmFKbJ" role="3uHU7B">
+                          <node concept="liA8E" id="5q1zSvmFKbK" role="2OqNvi">
+                            <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
+                            <node concept="37vLTw" id="5q1zSvmFKbL" role="37wK5m">
+                              <ref role="3cqZAo" node="5q1zSvmFKbN" resolve="ignoredProvider" />
+                            </node>
+                          </node>
+                          <node concept="37vLTw" id="5q1zSvmFKbM" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5q1zSvmFKbR" resolve="resourceType" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -663,31 +678,23 @@
       <node concept="_YKpA" id="2WTAWey3U7u" role="1tU5fm">
         <node concept="17QB3L" id="2WTAWey3U7v" role="_ZDj9" />
       </node>
-      <node concept="2OqwBi" id="2WTAWey41JJ" role="33vP2m">
-        <node concept="2OqwBi" id="2WTAWey3U7w" role="2Oq$k0">
-          <node concept="2OqwBi" id="2WTAWey3U7x" role="2Oq$k0">
-            <node concept="10M0yZ" id="2WTAWey3WrQ" role="2Oq$k0">
-              <ref role="3cqZAo" node="2WTAWey3TJ8" resolve="ignoredResources" />
-              <ref role="1PxDUh" node="2WTAWey3yIO" resolve="ProviderAzureRM" />
-            </node>
-            <node concept="X8dFx" id="2WTAWey3U7z" role="2OqNvi">
-              <node concept="10M0yZ" id="2WTAWey3WZd" role="25WWJ7">
-                <ref role="3cqZAo" node="2WTAWey3TMD" resolve="ignoredResources" />
-                <ref role="1PxDUh" node="2WTAWey3$G4" resolve="ProviderGoogle" />
-              </node>
-            </node>
+      <node concept="2OqwBi" id="2WTAWey3U7w" role="33vP2m">
+        <node concept="2OqwBi" id="2WTAWey3U7x" role="2Oq$k0">
+          <node concept="10M0yZ" id="2WTAWey3WrQ" role="2Oq$k0">
+            <ref role="3cqZAo" node="2WTAWey3TJ8" resolve="ignoredResourceTypes" />
+            <ref role="1PxDUh" node="2WTAWey3yIO" resolve="ProviderAzureRM" />
           </node>
-          <node concept="X8dFx" id="2WTAWey3U7_" role="2OqNvi">
-            <node concept="10M0yZ" id="2WTAWey40ju" role="25WWJ7">
-              <ref role="3cqZAo" node="2WTAWey3Tx3" resolve="ignoredResources" />
-              <ref role="1PxDUh" node="2WTAWey3TtP" resolve="ProviderDocker" />
+          <node concept="X8dFx" id="2WTAWey3U7z" role="2OqNvi">
+            <node concept="10M0yZ" id="2WTAWey3WZd" role="25WWJ7">
+              <ref role="3cqZAo" node="2WTAWey3TMD" resolve="ignoredResourceTypes" />
+              <ref role="1PxDUh" node="2WTAWey3$G4" resolve="ProviderGoogle" />
             </node>
           </node>
         </node>
-        <node concept="X8dFx" id="2WTAWey44xk" role="2OqNvi">
-          <node concept="10M0yZ" id="2WTAWey45Fb" role="25WWJ7">
-            <ref role="3cqZAo" node="2WTAWey3TPZ" resolve="ignoredResources" />
-            <ref role="1PxDUh" node="2WTAWey3TP1" resolve="ProviderKubernetes" />
+        <node concept="X8dFx" id="2WTAWey3U7_" role="2OqNvi">
+          <node concept="10M0yZ" id="2WTAWey40ju" role="25WWJ7">
+            <ref role="3cqZAo" node="2WTAWey3Tx3" resolve="ignoredResourceTypes" />
+            <ref role="1PxDUh" node="2WTAWey3TtP" resolve="ProviderDocker" />
           </node>
         </node>
       </node>
@@ -705,7 +712,22 @@
           <node concept="Xl_RD" id="5q1zSvmFq54" role="HW$Y0">
             <property role="Xl_RC" value="random_" />
           </node>
+          <node concept="Xl_RD" id="48KNlsJdwAS" role="HW$Y0">
+            <property role="Xl_RC" value="kubernetes_" />
+          </node>
         </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="48KNlsJdx3z" role="jymVt" />
+    <node concept="Wx3nA" id="48KNlsJdxgL" role="jymVt">
+      <property role="TrG5h" value="allowedResourceTypes" />
+      <node concept="3Tm1VV" id="48KNlsJdxgM" role="1B3o_S" />
+      <node concept="_YKpA" id="48KNlsJdxgN" role="1tU5fm">
+        <node concept="17QB3L" id="48KNlsJdxgO" role="_ZDj9" />
+      </node>
+      <node concept="10M0yZ" id="48KNlsJd_Xk" role="33vP2m">
+        <ref role="3cqZAo" node="2WTAWey3TPZ" resolve="allowedResources" />
+        <ref role="1PxDUh" node="2WTAWey3TP1" resolve="ProviderKubernetes" />
       </node>
     </node>
     <node concept="2tJIrI" id="2WTAWey3TZ_" role="jymVt" />
@@ -1173,7 +1195,7 @@
   <node concept="312cEu" id="2WTAWey3TP1">
     <property role="TrG5h" value="ProviderKubernetes" />
     <node concept="Wx3nA" id="2WTAWey3TPZ" role="jymVt">
-      <property role="TrG5h" value="ignoredResources" />
+      <property role="TrG5h" value="allowedResourceTypes" />
       <node concept="3Tm1VV" id="2WTAWey3TQ0" role="1B3o_S" />
       <node concept="_YKpA" id="2WTAWey3TQ1" role="1tU5fm">
         <node concept="17QB3L" id="2WTAWey3TQ2" role="_ZDj9" />
@@ -1182,12 +1204,50 @@
         <node concept="Tc6Ow" id="2WTAWey3TQ4" role="2ShVmc">
           <node concept="17QB3L" id="2WTAWey3TQ5" role="HW$YZ" />
           <node concept="Xl_RD" id="2WTAWey3TQ6" role="HW$Y0">
-            <property role="Xl_RC" value="kubernetes_namespace" />
+            <property role="Xl_RC" value="kubernetes_deployment" />
+          </node>
+          <node concept="Xl_RD" id="48KNlsJjZPc" role="HW$Y0">
+            <property role="Xl_RC" value="kubernetes_pod" />
+          </node>
+          <node concept="Xl_RD" id="48KNlsJjZSH" role="HW$Y0">
+            <property role="Xl_RC" value="kubernetes_stateful_set" />
           </node>
         </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="2WTAWey3TP2" role="1B3o_S" />
+    <node concept="3UR2Jj" id="48KNlsJjZNV" role="lGtFl">
+      <node concept="TZ5HA" id="48KNlsJjZNW" role="TZ5H$">
+        <node concept="1dT_AC" id="48KNlsJjZNX" role="1dT_Ay">
+          <property role="1dT_AB" value="https://registry.terraform.io/providers/hashicorp/kubernetes" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="48KNlsJq8ns" role="TZ5H$">
+        <node concept="1dT_AC" id="48KNlsJq8nt" role="1dT_Ay">
+          <property role="1dT_AB" value="" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="48KNlsJq8nA" role="TZ5H$">
+        <node concept="1dT_AC" id="48KNlsJq8nB" role="1dT_Ay">
+          <property role="1dT_AB" value="We allow Kubernetes object types from which the Kubernetes transformation creates EDMM components to retain relations " />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="48KNlsJq8nW" role="TZ5H$">
+        <node concept="1dT_AC" id="48KNlsJq8nX" role="1dT_Ay">
+          <property role="1dT_AB" value="between components from Terraform and Kubernetes resources." />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="48KNlsJq8n4" role="TZ5H$">
+        <node concept="1dT_AC" id="48KNlsJq8n5" role="1dT_Ay">
+          <property role="1dT_AB" value="" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="48KNlsJq8na" role="TZ5H$">
+        <node concept="1dT_AC" id="48KNlsJq8nb" role="1dT_Ay">
+          <property role="1dT_AB" value="Todo: deal with resource type kubernetes_manifest, as it may be used to specify arbitrary kubernetes objects" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="5q1zSvmFmk8">
     <property role="TrG5h" value="ProviderRandom" />
