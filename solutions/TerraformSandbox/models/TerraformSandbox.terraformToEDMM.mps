@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:84dbff16-9aa0-49ca-b864-bbf6423735dc(TerraformSandbox.terraformToEDMM)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <use id="667f265d-40c8-4c6d-8057-5c5cb65be64f" name="Terraform" version="0" />
   </languages>
@@ -55,6 +56,10 @@
         <property role="3Q16K" value="testArg" />
         <property role="3Q1ci" value="testArgVal" />
       </node>
+      <node concept="3Q103" id="5gxff7zG58u" role="3Q1MN">
+        <property role="3Q16K" value="referenceWithVariable" />
+        <property role="3Q1ci" value="customlocal3.newVM.ian.king" />
+      </node>
     </node>
     <node concept="3Q0$U" id="1DfWVAFF1CW" role="3RZBQ">
       <property role="3Q0SZ" value="testContainerWithoutImage" />
@@ -98,7 +103,7 @@
       </node>
       <node concept="3Q103" id="7xk5uRlsQaW" role="3Q1MN">
         <property role="3Q16K" value="ian.king" />
-        <property role="3Q1ci" value="var.test" />
+        <property role="3Q1ci" value="&quot;${var.test}&quot;" />
       </node>
     </node>
     <node concept="3Q0$U" id="2xuCNsSeNDp" role="3RZBQ">

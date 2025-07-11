@@ -1562,8 +1562,30 @@
                       <node concept="37vLTw" id="1lng5hnA4be" role="37wK5m">
                         <ref role="3cqZAo" node="7xk5uRlx8cp" resolve="genContext" />
                       </node>
-                      <node concept="37vLTw" id="1lng5hnA4wz" role="37wK5m">
-                        <ref role="3cqZAo" node="1lng5hn_Xcn" resolve="referencedExpression" />
+                      <node concept="2OqwBi" id="5gxff7zG3MB" role="37wK5m">
+                        <node concept="2OqwBi" id="5gxff7zG2D1" role="2Oq$k0">
+                          <node concept="37vLTw" id="1lng5hnA4wz" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1lng5hn_Xcn" resolve="referencedExpression" />
+                          </node>
+                          <node concept="liA8E" id="5gxff7zG2W_" role="2OqNvi">
+                            <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
+                            <node concept="Xl_RD" id="5gxff7zG2WA" role="37wK5m">
+                              <property role="Xl_RC" value="\&quot;${" />
+                            </node>
+                            <node concept="Xl_RD" id="5gxff7zG2WB" role="37wK5m">
+                              <property role="Xl_RC" value="" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="5gxff7zG4FP" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
+                          <node concept="Xl_RD" id="5gxff7zG4FQ" role="37wK5m">
+                            <property role="Xl_RC" value="}\&quot;" />
+                          </node>
+                          <node concept="Xl_RD" id="5gxff7zG4FR" role="37wK5m">
+                            <property role="Xl_RC" value="" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -1575,7 +1597,7 @@
                   <node concept="liA8E" id="1lng5hn_ZEy" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
                     <node concept="Xl_RD" id="1lng5hn_ZEz" role="37wK5m">
-                      <property role="Xl_RC" value="var." />
+                      <property role="Xl_RC" value="\&quot;${var." />
                     </node>
                   </node>
                 </node>

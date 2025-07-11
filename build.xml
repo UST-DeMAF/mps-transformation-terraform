@@ -309,7 +309,6 @@
           <module ref="f14a2376-c0aa-410c-b33a-ef6b7f4e7a0c(EDMM)" kind="cl" />
         </dependencies>
         <uses>
-          <language id="l:f14a2376-c0aa-410c-b33a-ef6b7f4e7a0c:EDMM" />
           <language id="l:667f265d-40c8-4c6d-8057-5c5cb65be64f:Terraform" />
           <language id="l:f61473f9-130f-42f6-b98d-6c438812c2f6:jetbrains.mps.baseLanguage.unitTest" />
           <language id="l:8585453e-6bfb-4d80-98de-b16074f1d86c:jetbrains.mps.lang.test" />

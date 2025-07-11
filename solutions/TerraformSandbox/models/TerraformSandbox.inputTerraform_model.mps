@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:3fb888de-d419-4c81-a436-be9fafc4ad2c(TerraformSandbox.inputTerraform_model)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <use id="667f265d-40c8-4c6d-8057-5c5cb65be64f" name="Terraform" version="0" />
   </languages>
