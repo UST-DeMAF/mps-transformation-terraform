@@ -2109,6 +2109,10 @@
         <ref role="2rW$FS" node="3Ro6Mdnr1aK" resolve="baseType" />
       </node>
     </node>
+    <node concept="VmU4M" id="2N0quqSNAhd" role="VmU7O">
+      <property role="TrG5h" value="Platform" />
+      <ref role="3hVscs" node="1DfWVAFS8_N" resolve="BaseType" />
+    </node>
     <node concept="VmU4M" id="3Ro6MdocYap" role="VmU7O">
       <property role="TrG5h" value="SoftwareApplication" />
       <ref role="3hVscs" node="1DfWVAFS8_N" resolve="BaseType" />
@@ -2122,7 +2126,7 @@
     </node>
     <node concept="VmU4M" id="3Ro6MdnqW5Z" role="VmU7O">
       <property role="TrG5h" value="ContainerPlatform" />
-      <ref role="3hVscs" node="1DfWVAFS8_N" resolve="BaseType" />
+      <ref role="3hVscs" node="2N0quqSNAhd" resolve="Platform" />
       <node concept="2ZBi8u" id="69gBb5neHYI" role="lGtFl">
         <ref role="2rW$FS" node="69gBb5neGXf" resolve="containerPlatform" />
       </node>
